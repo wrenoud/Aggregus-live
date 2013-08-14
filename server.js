@@ -1,20 +1,18 @@
-// Load central Deps
+// All the secrets we don't want on git
+var secrets = require('./secrets.js')('dev');
 
+// Load central Deps
 var express = require('express');
 var crypto = require('crypto');
 var jade = require('jade');
 var underscore = require('underscore');
 var mongoose = require('mongoose');
-var mandrill = require('node-mandrill')('0bFNPDenlDiZtu7aXujDQQ');
+var mandrill = require('node-mandrill')(secrets.mandrill_api_key);
 var MemoryStore = require('connect').session.MemoryStore;
 var fs = require('fs');
 var querystring = require('querystring');
 
-// All the secrets we don't want on git
-var secrets = require('./secrets.js')('dev');
-
 // Configure Stripe
-
 var Stripe = require('stripe')(secrets.stripe_api_key);
 
 // Hello there, gorgeous.
