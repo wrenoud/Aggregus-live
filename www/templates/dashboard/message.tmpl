@@ -1,0 +1,21 @@
+<div data-id="<%= aggid %>" class="msg">
+    
+    	<img src="<%= sender.profileimg %>">
+		
+		<span class="content">
+  
+  		<span class="title">From: <a><%= sender.name.first %> <%= sender.name.last %></a></span>
+		<span class="messagetext">Subject: <%= subject %> </span>
+  
+  		<span class="buttons">
+				<button data-messageid="<%= aggid %>" class="viewmessage btn">View Message</button>
+				<a href="/#profile/<%= sender.aggid %>"><button class="btn">View <%= sender.name.first %>'s Profile</button></a>
+		</span>
+			
+		</span>
+            
+		<div data-id="<%= aggid %>" class="delete">
+			<i class="icon-remove-circle"></i>
+		</div>
+        
+    </div>

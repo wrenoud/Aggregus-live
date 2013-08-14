@@ -1,0 +1,71 @@
+<div class="process introduction">
+
+<div class="sidecol">
+	<div class="process-name">Introduction</div>
+    <div class="menu">
+		<div data-id="welcome" class="item selected"><div style="display:auto" class="count">1</div><span>Welcome</span></div>
+        <div data-id="imagesel" class="item"><div style="display:auto" class="count">2</div><span>Photography</span></div>
+        <div data-id="locationsel" class="item"><div style="display:auto" class="count">4</div><span>Location</span></div>
+		<div data-id="descriptionsel" class="item"><div style="display:auto" class="count">5</div><span>About You</span></div>
+		<div data-id="sallyforth" class="item"><div style="display:auto" class="count">6</div><span>Sally forth!</span></div>
+    </div>
+</div>
+
+<div class="maincol welcome">
+	<h1>Welcome to Aggregus</h1>
+	<h3>We've got your basic details - but we know that's not the whole picture. Take a moment to fill out the rest of your profile (though, for the time being, check out what's it like being a <a href="/#profile/<%= aggid %>" target="_blank">panda</a>).</h3>
+	<button data-show="imagesel" data-hide="welcome" data-bypass="false" class="btn goto">Complete Profile</button>
+	<a href="/#dashboard"><button class="btn">I'd rather stick with the panda...</button></a>
+</div>
+
+<div class="maincol imagesel">
+	<h1>You rock.</h1>
+	<h3>First off: let's upload some photography for your profile. We'll need a profile photo (250 x 250) and a cover photo (1200 x 800), though we'd be happy to take larger photos if you have them. Go for your passion! Click <a href="/#profile/<%= aggid %>" target="_blank">here</a> for a preview of your profile's layout.</h3>
+	<div>
+		<button style="margin-bottom:15px" class="btn" name="profileimageupload">Upload New Profile Image</button><img style="visibility:hidden;margin-bottom:-5px" src="https://s3-us-west-2.amazonaws.com/aggregus/assets/8-1.gif" class="loadingprofile" />
+	</div>
+	<div>
+		<img height="250" width="250" src="<%= profileimg %>" name="profileimagepreview" />
+	</div>
+	<p></p>
+	<div>
+		<button style="margin-bottom:15px" class="btn" name="coverimageupload">Upload New Cover Image</button><img style="visibility:hidden;margin-bottom:-5px" src="https://s3-us-west-2.amazonaws.com/aggregus/assets/8-1.gif" class="loadingcover" />
+	</div>
+	<div>
+		<img height="320" width="480" src="<%= coverimg %>" name="coverimagepreview" />
+	</div>
+	<button style="display:inline-block;margin-top:15px;" data-show="locationsel" data-hide="imagesel" data-bypass="false" class="btn goto">Onward!</button>
+	<button style="display:inline-block;margin-top:15px;" data-show="locationsel" data-hide="imagesel" data-bypass="true" class="btn goto">Skip this...</button>
+	<a style="display:block;margin:15px 0px 15px 0px" href="/#dashboard">I've changed my mind - take me to the dashboard.</a>
+</div>
+
+<div class="maincol locationsel">
+	<h1>A true masterpiece.</h1>
+	<h3>To help tailor your experience on Aggregus, please give us a gist of your whereabouts. No specifics, please - this information will be public. A simple city name will suffice.</h3>
+	<input name="locationentry" type="text" style="width:375px;" placeholder="Enter your location here!" /><button class="btn updatemap">Find me!</button>
+	<div id="map"></div>
+	<button style="display:inline-block;margin-top:15px;" data-show="imagesel" data-hide="locationsel" data-bypass="true" class="btn goto">Wait, go back...</button>
+	<button style="display:inline-block;margin-top:15px;" data-show="descriptionsel" data-hide="locationsel" data-bypass="false" class="btn goto">Onward!</button>
+	<button style="display:inline-block;margin-top:15px;" data-show="descriptionsel" data-hide="locationsel" data-bypass="true" class="btn goto">Skip this...</button>
+	<a style="display:block;margin:15px 0px 15px 0px" href="/#dashboard">I've changed my mind - take me to the dashboard.</a>
+</div>
+
+<div class="maincol descriptionsel">
+	<h1>A wonderful place to call home!</h1>
+	<h3>One more thing: the legend of you. Tell the world a bit about yourself.
+	<p>
+	<textarea maxlength="600" rows="5" cols="5" style="width:100%;font-size:25px;display:block;" id="textplace" name="introdesc" placeholder="Enter your description here!" value=""></textarea>
+	<p>
+	<button style="display:inline-block;margin-top:15px;" data-show="locationsel" data-hide="descriptionsel" data-bypass="true" class="btn goto">Wait, go back...</button>
+	<button style="display:inline-block;margin-top:15px;" data-show="sallyforth" data-hide="descriptionsel" data-bypass="false" class="btn goto">Onward!</button>
+	<button style="display:inline-block;margin-top:15px;" data-show="sallyforth" data-hide="descriptionsel" data-bypass="true" class="btn goto">Skip this...</button>
+</div>
+
+<div class="maincol sallyforth">
+	<h1>And you're done!</h1>
+	<h3>Click the button below to create your profile!</h3>
+	<button class="create btn">Create my profile!</button>
+	<img style="visibility:hidden" class="loadingcreation" src="https://s3-us-west-2.amazonaws.com/aggregus/assets/8-1.gif" />
+</div>
+
+</div>

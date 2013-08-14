@@ -1,0 +1,18 @@
+	<div class="notification">
+    
+    	<img src="<%= origin.profileimg %>">
+		
+        <span class="title"><a><%= origin.name.first %> <%= origin.name.last %><a/> has reviewed your experience <a><%= experience.name %></a>
+        
+			<span class="buttons">
+				<button class="btn">View Review</button>
+				<button data-profileid="<%= origin.aggid %>" class="viewprofilebtn btn">View <%= origin.name.first %>'s Profile</button>
+			</span>
+			
+		</span>
+            
+		<div data-id="<%= aggid %>" class="delete">
+			<i class="icon-remove-circle"></i>
+		</div>
+        
+    </div>

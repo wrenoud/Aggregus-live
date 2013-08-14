@@ -1,0 +1,45 @@
+<div class="modalcover"></div>
+
+<div class="modalwindow">
+
+	<div class="close">X</div>
+	<div class="login">
+    	<div class="title">Login</div>
+        <input style="width:197px;" class="loginemail" name="loginemail" type="text" placeholder="Email" />
+        <input style="width:197px;" class="loginpass" name="loginpass" type="password" placeholder="Password" />
+        <input id="loginsubmit" class="btn" name="loginsubmit" type="submit" value="Login" />
+        <div class="forgotpasswordbtn">Forgot My Password</div>
+		<p>
+		<fb:login-button show-faces="false" width="200" max-rows="1" scope="user_about_me, user_location, email">Login with Facebook</fb:login-button>
+        <div id="loginerror"></div>
+         <br />
+    </div>
+	
+    <div class="signup">
+    	<div class="title">Sign Up</div>
+        <input class="signupfname" name="signupfname" type="text" placeholder="First Name" />
+        <input class="signuplname" name="signuplname" type="text" placeholder="Last Name" />
+        <input style="width:197px;" class="signupemail" onkeyup="this.value = this.value.toLowerCase()" name="signupemail" type="text" placeholder="Email" />
+        <input style="width:197px;" class="signuppass" name="signuppass" type="password" placeholder="Password" />
+        <input name="signuplegal" class="signuplegal" type="checkbox" />
+        <label for="signuplegal">I agree to the <a href="/#terms" target="_blank">Terms and Conditions</a></label>
+        <input id="signupsubmit" class="btn" name="signupsubmit" type="submit" value="Sign Up" />
+        <div id="registererror"></div>
+		<br />
+    </div>
+	
+    <div id="forgotpassword">
+    	<div id="title">Enter your account email to retrieve password.</div>
+    	<input id="forgotpassemail" name="forgotpassemail" onfocus="this.value = ''" type="text" value="Email" />
+        <input id="forgotpasssubmit" class="btn" name="forgotpasssubmit" type="submit" value="Confirm" />
+        <button class="btn" id="fpnevermind">Nevermind.</button>
+        <div id="forgotpasserror"></div>
+    </div>
+    
+</div>
+
+<div id="fb-root"></div>
+
+<script>
+	FB.XFBML.parse();
+</script>

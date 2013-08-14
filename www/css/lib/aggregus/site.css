@@ -1,0 +1,2692 @@
+@charset "UTF-8";
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% HOLY UTLIMATE CSS RULES %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+body, html {
+	font-family: 'Lato', sans-serif;
+	padding: 0px;
+	margin:0px;
+	
+	background-color:transparent;
+}
+
+a {
+	text-decoration:none;
+	color:#64ecff;
+}
+
+a:hover {
+	opacity:0.9;
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% RESET PASSWORD & CONFIRM ACCOUNT STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+#resetpassform {
+	position:absolute;
+	width:400px;
+	text-align:center;
+	left:50%;
+	margin-left:-200px;
+	margin-top:200px;
+}
+
+#resetpassfirst {
+	width:400px;
+	height:50px;
+	font-size:40px;
+	margin-bottom:20px;
+	font-family:"Lato", sans-serif;
+}
+
+#resetpasssecond {
+	width:400px;
+	height:50px;
+	font-size:40px;
+	margin-bottom:20px;
+	font-family:"Lato", sans-serif;
+}
+
+#resetpassform label {
+	font-size:20px;
+	font-weight: 300;
+	font-family:"Lato", sans-serif;
+}
+
+#confirmaccountcontent #message {
+	width:800px;
+	margin-top:350px;
+	position:absolute;
+	left:50%;
+	margin-left:-400px;
+	text-align:center;
+}
+	
+#confirmaccountcontent #message span {
+	font-size:40px;
+	font-weight: 300;	
+	font-family:"Lato", sans-serif;
+	width:100%;
+	margin-bottom:20px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% TERMS STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.terms {
+	position: absolute;
+	width:800px;
+	left:50%;
+	margin-left:-400px;
+	margin-top:100px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% LEARN MORE STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.learnmore {
+	width:800px;
+	margin:auto;
+	margin-top:75px;
+	font-family:"Lato", sans-serif;
+	/*background-color:rgb(245,245,245);*/
+}
+
+.learnmore .intrologo {
+	float:right;
+}
+
+.learnmore .introImage {
+	margin:32px;
+	border:0px solid white;
+	border-radius:100px;
+	clear:both;
+}
+
+.learnmore .introDesc {
+	width:200px;
+	height:240px;
+	margin:-10px 32px 32px 32px;
+	display:inline-block;
+}
+
+.learnmore .introDesc .title {
+	width:200px;
+	position:absolute;
+	text-align:center;
+	font-size:35px;
+	font-weight:300;
+}
+
+.learnmore .introDesc .content {
+	width:200px;
+	margin-top:50px;
+	position:absolute;
+	text-align:center;
+	font-size:20px;
+	font-weight:300;
+}
+
+.learnmore .h1 {
+	font-size:90px;
+	font-weight: 100;
+	text-align:left;
+	margin-top:-20px;
+}
+
+.learnmore .h3 {
+	font-size:35px;
+	font-weight: 300;
+	text-align:left;
+}
+
+.learnmore .h4 {
+	font-size:35px;
+	font-weight: 300;
+	text-align:left;
+}
+
+.learnmore .h5 {
+	font-size:0px;
+	font-weight: 300;
+	text-align:left;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% HEADER STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+#header {
+	position:fixed;
+	height:40px;
+	width:100%;
+	top:0px;
+	z-index:1000;
+	background-color: #64ecff;
+	background-color: rgba(100, 236, 255, 0.75);
+}
+
+#header .title {
+	font-weight: 300;
+	font-size: 20px;
+	margin-left:15px;
+	margin-top:5px;
+	color:white;
+	-webkit-text-stroke-width:0.5px;
+	letter-spacing:0.8px;
+}
+
+#header .viewxps {
+	position:absolute;
+	top:5px;
+	width:150px;
+	padding-top:3px;
+	background-color:white;
+	color:#64ecff;
+	text-align:center;
+	cursor:pointer;
+	font-size:15px;
+	border-radius:0px;
+}
+
+#header .viewxps:hover {
+	background-color:#FAFAFA;
+}
+
+#header .viewxps:active {
+	background-color:#FFF;
+}
+
+#header .signup, #header .login {
+	position:absolute;
+	width:75px;
+	height:100%;
+	top:0px;
+	font-weight: 300;
+	font-size: 15px;
+	color:white;
+	border-left:1px solid white;
+}
+
+#header .signup span, #header .login span {
+	width:100%;
+	position:absolute;
+	text-align:center;
+	height:15px;
+	top:50%;
+	margin-top:-10px;
+}
+
+
+#header .signup:hover, #header .login:hover {
+	cursor: pointer;
+}
+
+#header .signup:hover > span, #header .login:hover > span {
+	opacity:0.75;
+	
+}
+
+#header .signup:active > span, #header .login:active > span {
+	color:white;
+}
+
+#header .plzbtn {
+	position:absolute;
+	font-size:20px;
+	right:95px;
+	height:20px;
+	top:50%;
+	margin-top:-10px;
+	color:white;
+	cursor:pointer;
+}
+
+#header .helphide {
+	display:none;
+}
+
+#header .overview {
+	position:absolute;
+	font-size:20px;
+	right:130px;
+	height:25px;
+	top:50%;
+	margin-top:-12.5px;
+	color:white;
+}
+
+#header .overview:hover {
+	cursor:pointer;
+}
+
+#header .overview:active > span {
+	opacity:0.5;
+}
+
+#header .overview img {
+	position:absolute;
+	top:0px;
+	left:-35px;
+	border-radius:12.5px;
+}
+
+#header .logout {
+	width:75px;
+	height:100%;
+	position:absolute;
+	right:0px;
+	top:0px;
+	color:white;
+	border-left:1px solid white;
+	}
+	
+#header .logout span {
+	width:100%;
+	position:absolute;
+	text-align:center;
+	height:15px;
+	top:50%;
+	margin-top:-10px;
+	color:white;
+	font-family:"Lato", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	text-shadow: 0 1px 1px rgba(255,255,255,.3);
+}
+
+#header .logout:hover {
+	cursor: pointer;
+}
+
+#header .logout:hover > span {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+#header .logout:active > span {
+	color: white;
+}
+
+#header .help {
+	position:absolute;
+	font-size:20px;
+	right:40px;
+	height:0px;
+	top:50%;
+	margin-top:-10px;
+	color:white;
+	display:none;
+}
+
+#header .help .carnet {
+	position:absolute;
+	height:30px;
+	width:30px;
+	background-color:#a2f3ff;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	z-index:20;
+	margin-top:40px;
+	margin-left:295px;
+}
+
+#header .help .box {
+	position:relative;
+	margin-top:50px;
+	margin-right:-25px;
+	width:380px;
+	padding:10px;
+	height:320px;
+	background-color:#a2f3ff;
+	z-index:30;
+}
+
+#header .help textarea {
+	width:360px;
+	height:200px;
+	margin-top:10px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% MODAL STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.modalcover {
+	height:100%;
+	width:100%;
+	background-color:black;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:100;
+	opacity:0.3;
+	display:none;
+}
+
+.modalwindow {
+	height:400px;
+	width:600px;
+	left:50%;
+	top:50%;
+	margin-left:-300px;
+	margin-top:-200px;
+	position:fixed;
+	z-index:100;
+	background-color:white;
+	border-radius:5px;
+	display:none;
+}
+
+.modalwindow .close {
+	position:absolute;
+	right:5px;
+	top:3px;
+	width:10px;
+	font-size:10px;
+	font-weight:400;
+}
+
+.modalwindow .close:hover {
+	cursor:pointer;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% HANDY HANDY OBJECTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.leaflet-control-zoom-in {
+	border-radius:5px 5px 0 0 ;
+}
+
+.leaflet-control-zoom-out {
+	border-radius:0 0 5px 5px ;
+}
+
+.bgblue {
+	background-color:#64ecff !important;
+}
+
+.btn {
+  -webkit-backface-visibility:hidden;
+  -webkit-box-shadow:none;
+  -webkit-transition:0.25s;
+  -webkit-border-radius:0; 
+   border-radius:0;
+  background-color:#64ecff;
+  background-position:initial initial;
+  background-repeat:initial initial;
+  border:none;
+  font-size:14px;
+  box-shadow:none;
+  color:#FFFFFF;
+  line-height:22px;
+  padding:5px 12px 5px;
+  text-decoration:none;
+  text-shadow:none;
+  transition:0.25s;
+}
+
+.btn.lrg {
+	padding: 15px 50px 15px;
+	font-size:25px;
+}
+
+.btn:hover {
+	background-color:#a2f3ff;
+	cursor:pointer;
+}
+
+.btn:active {
+	background-color:#64ecff;
+}
+
+.btn.alert {
+	background-color:red;
+}
+
+.btn.alert:hover {
+	background-color:red;
+	opacity:0.5;
+}
+
+.btn.alert:active {
+	background-color:red;
+	opacity:0.9;
+}
+
+.btn:disabled,
+.btn:disabled:hover,
+.btn:disabled:active {
+	background-color:grey;
+	opacity:1;
+}
+
+/*.goto {
+	width:80px;
+	height:40px;
+	font-size:16px;
+	margin-right:10px;
+}*/
+
+input[type=password], input[type=text], textarea {
+  -webkit-appearance:none;
+  -webkit-backface-visibility:hidden;
+  -webkit-box-shadow:none;
+  -webkit-transition:border 0.25s linear, color 0.25s linear;
+  border:2px solid #BDC3C7;
+  border-radius:0px;
+  box-shadow:none;
+  color:#34495E;
+  font-family:Lato, sans-serif;
+  font-size:14px;
+  min-height:21px;
+  padding:8px 5px;
+  text-indent:6px;
+  margin:2px;
+  transition:border 0.25s linear, color 0.25s linear;
+  z-index:5000;
+}
+
+input[type=password]:focus, input[type=text]:focus, textarea:focus {
+	  border:2px solid #64ecff;
+	  outline:none;
+}
+
+.notouch {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.nooverflow {
+	overflow:hidden;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% ANIMESHUNS!!! STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@-webkit-keyframes homepage-intro /* Safari and Chrome */
+{
+0% {top:100%;left:50%;margin-left:-132.5px;margin-top:-150px;}
+75% {top:49%;left:50%;margin-left:-132.5px;margin-top:-150px;}
+100% {top:50%;left:50%;margin-left:-132.5px;margin-top:-150px;}
+}
+
+@-moz-keyframes homepage-intro /* Safari and Chrome */
+{
+0% {top:100%;left:50%;margin-left:-132.5px;}
+75% {top:49%;left:50%;margin-left:-132.5px;}
+100% {top:50%;left:50%;margin-left:-132.5px;}
+}
+
+@-webkit-keyframes experience-intro /* Safari and Chrome */
+{
+0% {top:100%;left:50%;margin-left:-125px;}
+25% {top:49%;left:50%;margin-left:-125px;}
+30% {top:50%;left:50%;margin-left:-125px;}
+90% {top:50%;left:50%;margin-left:60px;}
+100% {top: 50%;left:50%;margin-left:60px;}
+}
+
+@-moz-keyframes experience-intro /* Safari and Chrome */
+{
+0% {top:100%;left:50%;margin-left:-125px;}
+25% {top:49%;left:50%;margin-left:-125px;}
+30% {top:50%;left:50%;margin-left:-125px;}
+90% {top:50%;left:50%;margin-left:60px;}
+100% {top: 50%;left:50%;margin-left:60px;}
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% FULL BACKGROUND IMAGE STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.background {
+	position:fixed;
+	visibility:hidden;
+	top:0px;
+	left:0px;
+}
+
+@media screen and (min-aspect-ratio: 3/2) {
+	.background {
+		width:100%;
+	}
+}
+
+@media screen and (max-aspect-ratio: 3/2) {
+	.background {
+		height:100%;
+	}
+}
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROCESS STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.process {
+	width:800px;
+	min-height:90%;
+	position:absolute;
+	top:100px;
+	left:50%;
+	margin-left:-400px;
+}
+
+.process .sidecol {
+	width:300px;
+	position:fixed;
+	margin-right:-300px;
+}
+
+.process .maincol {
+	width:480px;
+	position:absolute;
+	right:0;
+	top:0;
+	display:none;
+}
+
+#processmap {
+	width:480px;
+	height:200px;
+	}
+	
+.process label {
+	font-size:20px;
+}
+
+.process label:hover {
+	color:#64ecff;
+	cursor:pointer;
+}
+
+.process label:active {
+	opacity:0.75;
+}
+
+/* ----- Side Column Styling ------*/
+
+.process .process-name {
+	display:block;
+	width:100%;
+	font-size:45px;
+	font-weight: 300;
+	margin-bottom:15px;
+}
+
+.process .menu {
+	width:300px;
+	border-right:1px solid #888;
+}
+
+.process .menu .item {
+	width:100%;
+	height:50px;
+}
+
+.process .menu .item span {
+	margin:7.5px 5px 0 0;
+	font-size:25px;
+	float:right;
+	font-weight: 300;
+}
+
+.process .menu .count {
+	height:25px;
+	width:25px;
+	padding:2.5px;
+	margin:10px 0 0 22.5px;
+	background-color:white;
+	float:left;
+	text-align:center;
+	font-size:20px;
+	color:#64ecff;
+	border-radius:15px;
+}
+
+.process .menu .item:hover {
+	cursor:pointer;
+	background-color:#64ecff;
+	border-radius:5px 0 0 5px;
+	color:white;
+	opacity:0.6;
+}
+
+.process .menu .item:active {
+	opacity:1;
+}
+
+.process .menu .selected {
+	background-color:#64ecff;
+	border-radius:5px 0 0 5px;
+	color:white;
+}
+
+.process .menu .selected:hover {
+	opacity:1;
+}
+
+/* ----- Side Column Styling ------*/
+
+.process h1 {
+	font-weight:300;
+	font-size:30px;
+}
+
+.process h3 {
+	font-weight: 300;
+	font-size:20px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% EDIT EXPERIENCE STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+.availabilityDialog {
+	background-color:#FEFEFE;
+	border: 2px solid #FAFAFA;
+	box-shadow: 0 1px 2px rgb(34, 25, 25);
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	width:150px;
+	height:200px;
+	position:absolute;
+	z-index:5000;
+}
+
+.availabilityDialog .pointer {
+	height:30px;
+	width:30px;
+	background-color:#FEFEFE;
+	border: 2px solid #FAFAFA;
+	box-shadow: 0 1px 2px rgb(34, 25, 25);
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari and Chrome */
+	position:absolute;
+	bottom:-18px;
+	left:60px;
+	z-index:-1;
+}
+
+.availabilityDialog .option {
+	width:126px;
+	position:relative;
+	display:block;
+	height:30px;
+	background-color:blue;
+	text-align:center;
+	padding-top:10px;
+	box-shadow: 0 1px 2px rgb(34, 25, 25);
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+}
+
+.availabilityDialog .option:hover {
+   -moz-box-shadow:    inset 0 0 5px #666;
+   -webkit-box-shadow: inset 0 0 5px #666;
+   box-shadow:         inset 0 0 5px #666;
+}
+
+.availabilityDialog .option:active {
+   -moz-box-shadow:    inset 0 0 7px #444;
+   -webkit-box-shadow: inset 0 0 7px #444;
+   box-shadow:         inset 0 0 7px #444;
+}
+
+.manageBookingDialog {
+	background-color:#FEFEFE;
+	border: 2px solid #FAFAFA;
+	box-shadow: 0 1px 2px rgb(34, 25, 25);
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	width:150px;
+	height:200px;
+	position:absolute;
+	z-index:10;
+}
+
+.manageBookingDialog .pointer {
+	height:30px;
+	width:30px;
+	background-color:#FEFEFE;
+	border: 2px solid #FAFAFA;
+	box-shadow: 0 1px 2px rgb(34, 25, 25);
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari and Chrome */
+	position:absolute;
+	bottom:-18px;
+	left:60px;
+	z-index:-1;
+}
+
+.manageBookingDialog .option {
+	width:126px;
+	position:relative;
+	display:block;
+	height:30px;
+	background-color:blue;
+	text-align:center;
+	padding-top:10px;
+	box-shadow: 0 1px 2px rgb(34, 25, 25);
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+}
+
+.manageBookingDialog .option:hover {
+   -moz-box-shadow:    inset 0 0 5px #666;
+   -webkit-box-shadow: inset 0 0 5px #666;
+   box-shadow:         inset 0 0 5px #666;
+}
+
+.manageBookingDialog .option:active {
+   -moz-box-shadow:    inset 0 0 7px #444;
+   -webkit-box-shadow: inset 0 0 7px #444;
+   box-shadow:         inset 0 0 7px #444;
+}
+
+.rosterItem {
+	width:100%;
+	height:75px;
+	padding:20px;
+	border-top: 1px solid #666;
+}
+
+.editxp .basicscol {
+	display:inline;
+}
+
+.editxp input[name="editxpduration"], .editxp input[name="editxpprice"], .editxp input[name="editxpmaxattend"], .editxp input[name="editxpminattend"], .editexp input[name="editxplocation"], .editxp input[name="editxpdailyxp"] {
+	width:100px;
+	height:25px;
+	font-size:20px;
+	margin-right:10px;
+}
+
+.editxp .basicscol input[type="number"] {
+	font-weight: 300;
+	right:0px;
+	width:50px;
+	position:absolute;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% CREATE EXPERIENCE STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.createxp .termscol {
+	display:inline;
+}
+
+.createxp input[name="createxpduration"], .createxp input[name="createxpprice"], .createxp input[name="createxpmaxattend"], .createxp input[name="createxpminattend"], .createexp input[name="createxplocation"], .createxp input[name="createxpdailyxp"] {
+	width:100px;
+	height:25px;
+	font-size:20px;
+	margin-right:10px;
+}
+
+.createxp input[type="number"], .createxp input[type="checkbox"] {
+	font-weight: 300;
+	left:350px;
+	width:50px;
+	position:absolute;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% CARD STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.card {
+	position:relative;
+	background-color: #FEFEFE;
+	color: #333;
+	font-weight: 300;
+	border: 2px solid #FAFAFA;
+	box-shadow: 0 1px 2px rgb(34, 25, 25);
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 5px 5px 5px 5px;
+	padding: 15px;
+	height:400px;
+	width:250px;
+	z-index:50;
+}
+
+.card a {
+	color:black;
+}
+
+.card a:hover {
+	color:#64ecff;
+}
+
+.card .inner {
+	position:absolute;
+	height: 165px;
+	width:250px;
+	bottom:0;
+}
+
+/* --- Profile View Specific --- */
+
+.card .name {
+	display:inline-block;
+	font-size:30px;
+	margin-bottom:0;
+	margin-top:5px;
+	width:100%;
+	text-align:left;
+}
+
+.card .contact {
+	height:50px;
+	width:250px;
+	background-color:#64ecff;
+	right:15px;
+	bottom:15px;
+	position:absolute;
+	color:white;
+}
+
+.card .contact:hover  {
+	opacity:0.75;
+	cursor:pointer;
+}
+
+.card .contact:active {
+	opacity:1;
+}
+
+.card .contact span {
+	font-size:25px;
+	margin:8px 0px 10px 0px;
+	width:100%;
+	text-align:center;
+	position:absolute;
+	font-weight: 300;
+	letter-spacing:0.1px;
+}
+
+.card .location {
+	display:inline-block;
+	width:100%;
+	font-size:19px;
+    text-align:center;
+	font-weight: 300;
+}
+
+/* --- Experience View Specific --- */
+
+.card .title {
+	display:inline-block;
+	font-size:20px;
+	margin-bottom:3px;
+}
+
+.card .author {
+	display:inline-block;
+	width:100%;
+	font-size:15px;
+    text-align:left;
+	font-weight: 300;
+}
+
+.card .price {
+	position:absolute;
+	width:50px;
+	height:50px;
+	bottom:20px;
+	font-weight: 100;
+	font-size:50px;
+	left:0;
+	letter-spacing:0.1px;
+}
+
+.card .dollar {
+	font-size:20px;
+	vertical-align:top;
+	margin-right:-2.5px;
+}
+
+.card .option {
+	width:50px;
+	height:50px;
+	position:absolute;
+	bottom:15px;
+	right:0px;
+}
+
+.card .option:hover {
+	background-color:#64ebff;
+	color:white;
+}
+
+.card .option:active {
+	opacity:0.6;
+}
+
+.card .buy {
+	height:50px;
+	width:125px;
+	background-color:#64ecff;
+	right:0px;
+	bottom:15px;
+	position:absolute;
+	color:white;
+}
+
+.card .buy:hover {
+	opacity:0.75;
+	cursor:pointer;
+}
+
+.card .buy:active {
+	opacity:1;
+}
+
+.card .buy span {
+	font-size:25px;
+	margin:8px 0px 10px 0px;
+	width:100%;
+	text-align:center;
+	position:absolute;
+	font-weight: 300;
+	letter-spacing:0.1px;
+}
+
+.card i {
+	font-size:30px;
+	width:30px;
+	height:30px;
+	left:10px;
+	top:10px;
+	position:absolute;
+}
+
+.card .slot1:hover, .card .slot2:hover, .card .heart:hover {
+	background-color:#64ebff;
+	color:white;
+}
+
+.card .slot1:active, .card .slot2:active, .card .heart:active {
+	opacity:0.6;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% POLAROID STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.polaroid {
+	position:absolute;
+	background-color: #FEFEFE;
+	color: #333;
+	font-weight: 300;
+	border: 2px solid #FAFAFA;
+	box-shadow: 0 1px 2px rgb(34, 25, 25);
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 5px 5px 5px 5px;
+	padding: 15px;
+	height:400px;
+	width:350px;
+	z-index:50;
+}
+
+.polaroid .where, .polaroid .host, .polaroid .photos, .polaroid .about, .polaroid .reviews, .polaroid .experiences, .polaroid .hovername  {
+	display:none;
+	height:337.5px;
+	width:100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.polaroid .grad {
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 70%, rgba(255,255,255,0.77) 93%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(70%,rgba(255,255,255,0)), color-stop(93%,rgba(255,255,255,0.77)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 70%,rgba(255,255,255,0.77) 93%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 70%,rgba(255,255,255,0.77) 93%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 70%,rgba(255,255,255,0.77) 93%,rgba(255,255,255,1) 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 70%,rgba(255,255,255,0.77) 93%,rgba(255,255,255,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+
+		position:absolute;
+		z-index:5000;
+		height:337.5px;
+		width:100%;
+}
+
+.polaroid .hovername {
+	background-color:white;
+	opacity:.9;
+	position:absolute;
+	height:337.5px;
+	width:350px;
+	z-index:100;
+}
+
+.polaroid .hovername span {
+	position:absolute;
+	width:100%;
+	text-align:center;
+	font-size:30px;
+	height:50px;
+	top:50%;
+	margin-top:-25px;
+	color:black;
+}
+
+.polaroid .title {
+	position:absolute;
+	bottom:24px;
+	right: 135px;
+	font-weight: 300;
+	letter-spacing:0.1px;
+	font-size:30px;
+}
+
+.polaroid .social {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	background-color:red;
+}
+
+.polaroid .social .share {
+	width:30px;
+	height:30px;
+	padding:10px;
+	background-color:white;
+	display:inline-block;
+}
+
+.polaroid .options {
+	position:absolute;
+	bottom:15px;
+	right:15px;
+	width:100px;
+	height:50px;
+	overflow:hidden;
+}
+
+.polaroid .option, .polaroid .select, .polaroid .chosen {
+	width:30px;
+	height:30px;
+	padding:10px;
+	background-color:white;
+	display:inline-block;
+}
+
+.polaroid .option i, .polaroid .select i, .polaroid .chosen i {
+	font-size:30px;
+	width:30px;
+	height:30px;
+	margin-top:10px;
+}
+
+.polaroid .option:hover, .polaroid .select:hover {
+	background-color:#64ebff;
+	color:white;
+	cursor:pointer;
+}
+
+.polaroid .option:active, .polaroid .select:active, .polaroid .chosen:active {
+	background-color:#a2f3ff;
+}
+
+.polaroid .select {
+	position:absolute;
+	background-color:white;
+	bottom:15px;
+	right:15px;
+	z-index:16;
+}
+
+.polaroid .option {
+}
+
+.polaroid .chosen {
+	position:absolute;
+	z-index:15;
+	margin-right:50px;
+	opacity:1;
+	bottom:0px;
+	right:0px;
+	background-color:#64ecff;
+	color:white;
+	cursor:pointer;
+}
+
+.polaroid .about {
+	position:absolute;
+	height:337.5px;
+	width:350px;
+	overflow:scroll;
+}
+
+.polaroid .about .specs {
+	width:100%;
+	height:50px;
+	margin-bottom:5px;
+	text-align:left;
+	font-weight: 300;
+}
+
+.polaroid .about .specs div {
+	font-size:40px;
+	display:inline;
+}
+
+.polaroid .about .specs span {
+	font-size:15px;
+	vertical-align:top;
+}
+
+.polaroid .about .whois {
+	width:100%;
+	min-height:50px;
+	margin-top:10px;
+}
+
+.polaroid .about .whois .whoisinner {
+	height:50px;
+	width:250px;
+	display:inline-block;
+	vertical-align:top;
+	margin-top:5px;
+	margin-left:5px;
+}
+
+.polaroid .reviews {
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.polaroid .review {
+	width:350px;
+	margin-bottom:20px;
+}
+
+.polaroid .review img {
+	height:75px;
+	width:75px;
+	border-radius: 37.5px;
+	vertical-align:top;
+	display:inline-block;
+}
+
+.polaroid .review div {
+	width:225px;
+	margin:0px 10px 0px 10px;
+	vertical-align:top;
+	display:inline-block;
+}
+
+.polaroid .review span {
+	width:280px;
+	margin:5px 0px 0px 10px;
+	font-size:15px;
+	color:#64ecff;
+	vertical-align:top;
+	display:inline-block;
+}
+
+/* --- Experiences (For Profile) --- */
+
+.polaroid .experiences {
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.polaroid .experience {
+	width:350px;
+	margin-bottom:20px;
+}
+
+.polaroid .experience img {
+	height:75px;
+	width:75px;
+	border-radius: 37.5px;
+	vertical-align:top;
+	display:inline-block;
+}
+
+.polaroid .experience div {
+	width:225px;
+	margin:0px 10px 0px 10px;
+	vertical-align:top;
+	display:inline-block;
+}
+
+.polaroid .experience span {
+	width:280px;
+	margin:5px 0px 0px 10px;
+	font-size:15px;
+	color:#64ecff;
+	vertical-align:top;
+	display:inline-block;
+}
+
+/* --- Experiences (For Experience) --- */
+
+.polaroid .host img {
+	height:100px;
+	width:100px;
+	display:inline-block;
+	vertical-align:top;
+	border-radius:50px;
+	margin-bottom:15px;
+}
+
+.polaroid .xpdetails {
+	font-size:23px;
+	margin:5px 0px 5px 0px;
+	font-weight:300;
+}
+
+.polaroid .xpdetails i {
+	color:#64ecff;
+}
+
+.polaroid .xpdetails i span {
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	color:black;
+}
+
+.polaroid .floatHeader {
+	display:block;
+	width:100%;
+	height:30px;
+	font-size:25px;
+	font-weight:300;
+	margin:5px 0 5px 0;
+}
+
+.polaroid .shareContainer {
+	position:absolute;
+	height:150px;
+	width:50px;
+	top:0px;
+	right:0px;
+}
+
+.polaroid .shareContainer .sharebox {
+	width:30px;
+	height:30px;
+	padding:10px;
+	background-color:white;
+	display:inline-block;
+}
+
+.polaroid .shareContainer .sharebox i {
+	font-size:30px;
+	width:30px;
+	height:30px;
+	margin-top:10px;
+}
+
+.polaroid .shareContainer .sharebox:hover {
+	background-color:#64ebff;
+	color:white;
+	cursor:pointer;
+}
+
+.polaroid .shareContainer .sharebox:active {
+	background-color:#a2f3ff;
+}
+
+.polaroid .shareContainerHost {
+	position:absolute;
+	height:30px;
+	width:150px;
+	margin-top:5px;
+	margin-left:-10px;
+}
+
+.polaroid .shareContainerHost .sharebox {
+	width:18px;
+	height:18px;
+	padding:6px;
+	background-color:white;
+	display:inline-block;
+}
+
+.polaroid .shareContainerHost .sharebox i {
+	font-size:18px;
+	width:18px;
+	height:18px;
+	margin-top:6px;
+}
+
+.polaroid .shareContainerHost .fb:hover {
+	color:#3B5998;
+	cursor:pointer;
+}
+
+.polaroid .shareContainerHost .twitter:hover {
+	color:#4099FF;
+	cursor:pointer;
+}
+
+.polaroid .shareContainerHost .pinterest:hover {
+	color:#C92228;
+	cursor:pointer;
+}
+
+.polaroid .hostsocial {
+	position:absolute;
+	left:40px;
+	width:50px;
+	height:200px;
+}
+
+.polaroid .hostsocial .sharebox {
+	width:30px;
+	height:30px;
+	padding:10px;
+	background-color:white;
+	display:inline-block;
+}
+
+.polaroid .hostsocial .sharebox i {
+	font-size:30px;
+	width:30px;
+	height:30px;
+	margin-top:10px;
+}
+
+.polaroid .hostsocial .sharebox:hover {
+	background-color:#64ebff;
+	color:white;
+	cursor:pointer;
+}
+
+.polaroid .hostsocial .sharebox:active {
+	background-color:#a2f3ff;
+}
+
+.polaroid .host .profile {
+	width:230px;
+	display: inline-block;
+	float:right;
+}
+
+.polaroid .host .profile div {
+	font-size:25px;
+}
+
+.polaroid .host .profile span {
+	font-size:15px;
+	margin-bottom:15px;
+}
+
+.polaroid .host .profile .bio {
+	font-size:15px;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.polaroid .host i {
+	font-size:30px;
+	display:block;
+	font-weight: 300;
+	margin-left:0px;
+}
+
+.polaroid .about {
+	display: inline;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% EXPERIENCE VIEW STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.experience .card {
+	bottom:20px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:50px;
+	margin-top:-200px;
+}
+
+.experience .polaroid {
+	right:50%;
+	top:50%;
+	margin-top:-200px;
+	margin-right:-40px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROFILE VIEW STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.profile .card {
+	bottom:20px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:50px;
+	margin-top:-200px;
+}
+
+.profile .polaroid {
+	right:50%;
+	top:50%;
+	margin-top:-200px;
+	margin-right:-40px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% DASHBOARD STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.dashboard {
+	width:800px;
+	height:90%;
+	position:absolute;
+	top:100px;
+	left:50%;
+	margin-left:-400px;
+}
+
+/* ----- General Column Styling ------*/
+
+.dashboard .sidecol {
+	width:300px;
+	position:fixed;
+	margin-right:-300px;
+}
+
+.dashboard .notifcol {
+	width:480px;
+	position:absolute;
+	right:0;
+	min-height:600px;
+}
+
+.dashboard .messagecol, .dashboard .editprofilecol, .dashboard .settingscol, .dashboard .mybookingscol, .dashboard .myexperiencescol, .dashboard .myheartscol {
+	width:480px;
+	position:absolute;
+	right:0;
+	min-height:600px;
+	display:none;
+}
+
+/* ----- Side Column Styling ------*/
+
+.dashboard .name {
+	display:block;
+	width:100%;
+	font-size:45px;
+	font-weight: 300;
+	margin-bottom:15px;
+}
+
+.dashboard .profileimg {
+	display:block;
+	width:100%;
+	margin-bottom:15px;
+}
+
+.dashboard .profileimg img {
+	width:75px;
+	height:75px;
+	border:0.1px solid transparent;
+	border-radius:37.5px;
+}
+
+.dashboard .menu {
+	width:100%;
+	border-right:1px solid #888;
+}
+
+.dashboard .menu .item {
+	width:100%;
+	height:50px;
+}
+
+.dashboard .menu .item span {
+	margin-top:7.5px;
+	font-size:25px;
+	float:right;
+	margin-right:5px;
+	font-weight: 300;
+}
+
+.dashboard .menu .count {
+	height:25px;
+	width:25px;
+	padding:2.5px;
+	margin-top:10px;
+	margin-left:22.5px;
+	background-color:white;
+	float:left;
+	text-align:center;
+	font-size:20px;
+	color:#64ecff;
+	border-radius:15px;
+}
+
+.dashboard .menu .item:hover {
+	cursor:pointer;
+	background-color:#64ecff;
+	border-radius:5px 0 0 5px;
+	color:white;
+	opacity:0.6;
+}
+
+.dashboard .menu .item:active {
+	opacity:1;
+}
+
+.dashboard .selected {
+	background-color:#64ecff;
+	border-radius:5px 0 0 5px;
+	color:white;
+}
+
+.dashboard .selected:hover {
+	opacity:1;
+}
+
+/* ----- Edit Profile View ----- */
+
+.editprofilecol input[name="user-firstnamesetting"], .editprofilecol input[name="user-lastnamesetting"] {
+	width:220px;
+}
+
+.editprofilecol input[name="user-locationsetting"] {
+	width:390px;
+}
+
+/* ----- Notification Column Styling ------*/
+
+.dashboard .notification {
+	min-height:75px;
+	width:100%;
+	margin-bottom:20px;
+	display:block;
+}
+
+.dashboard .notification img {
+	height:50px;
+	width:50px;
+	margin-top:7.5px;
+	margin-left:7.5px;
+	display:inline-block;
+	border:0.1px solid #888;
+	border-radius:25px;
+	vertical-align:top;
+}
+
+.dashboard .notification .title {
+	display:inline-block;
+	font-size:17.5px;
+	font-weight: 300;
+	margin-left:10px;
+	min-height:25px;
+	width:275px;
+}
+.dashboard .notification .buttons {
+	display:inline-block;
+	font-size:17.5px;
+	font-weight: 300;
+	height:25px;
+	width:350px;
+	margin-top:7.5px;
+}
+
+.dashboard .notification .btn {
+	display:inline-block;
+	height:35px;
+	font-size:15px;
+	border-radius:5px;
+}
+
+.dashboard .delete {
+	float:right;
+	margin-top:10px;
+	vertical-align:top;
+	font-weight: 300;
+	font-size:50px;
+	border-left:1px solid #888;
+	padding-left:15px;
+}
+
+.dashboard .delete i:hover {
+	opacity:0.5;
+	cursor:pointer;
+}
+
+.dashboard .delete i:active {
+	opacity:0.75;
+}
+
+/* --- Messages --- */
+
+.dashboard .msg {
+	min-height:75px;
+	width:100%;
+	margin-bottom:20px;
+	display:block;
+}
+
+.dashboard .msg img {
+	height:50px;
+	width:50px;
+	margin-top:7.5px;
+	margin-left:7.5px;
+	display:inline-block;
+	border:0.1px solid #888;
+	border-radius:25px;
+	vertical-align:top;
+}
+
+.dashboard .msg .title {
+	display:inline-block;
+	font-size:17.5px;
+	font-weight: 300;
+	margin-left:10px;
+	min-height:25px;
+}
+	
+.dashboard .msg .content {
+	display:inline-block;
+	font-size:17.5px;
+	font-weight: 300;
+	margin-left:10px;
+	min-height:25px;
+	width:275px;
+}
+
+.dashboard .msg .messagetext {
+	display:inline-block;
+	font-size:17.5px;
+	font-weight: 300;
+	margin-left:10px;
+	min-height:25px;
+	width:275px;
+}
+
+.dashboard .msg .buttons {
+	display:inline-block;
+	font-size:17.5px;
+	font-weight: 300;
+		margin-left:10px;
+	height:25px;
+	width:550px;
+	margin-top:7.5px;
+}
+
+.dashboard .msg .btn {
+	display:inline-block;
+	height:35px;
+	font-size:15px;
+	border-radius:5px;
+}
+
+.notifcount, .msgcount {
+	display:none;
+}
+
+/* ----- Booking Column Styling ------*/
+
+
+.dashboard .booking {
+	min-height:75px;
+	width:100%;
+	margin-bottom:30px;
+	display:block;
+	position:relative;
+}
+
+.dashboard .booking img {
+	height:50px;
+	width:50px;
+	margin-top:7.5px;
+	margin-left:7.5px;
+	display:inline-block;
+	border:0.1px solid #888;
+	border-radius:25px;
+	vertical-align:top;
+}
+
+.dashboard .booking .content {
+	width: 275px;
+	display:inline-block;
+	right:0px;
+}
+
+.dashboard .booking .title {
+	display:inline-block;
+	font-size:17.5px;
+	font-weight: 300;
+	margin-left:10px;
+	min-height:25px;
+	width:325px;
+}
+.dashboard .booking .buttons {
+	display:inline-block;
+	font-size:17.5px;
+	font-weight: 300;
+	height:25px;
+	width:325px;
+	margin-top:7.5px;
+}
+
+.dashboard .booking .btn {
+	display:inline-block;
+	height:35px;
+	font-size:15px;
+	border-radius:5px;
+	margin-left:10px;
+}
+
+.dashboard .delete {
+	float:right;
+	margin-top:10px;
+	vertical-align:top;
+	font-weight: 300;
+	font-size:50px;
+	border-left:1px solid #888;
+	padding-left:15px;
+}
+
+.notifcount, .bookingcount {
+	display:none;
+}
+
+/* ----- Experience Column Styling ------*/
+
+.dashboard .experience {
+	min-height:75px;
+	width:100%;
+	margin-bottom:30px;
+	display:block;
+	position:relative;
+}
+
+.dashboard .experience img {
+	height:50px;
+	width:50px;
+	margin-top:7.5px;
+	margin-left:7.5px;
+	display:inline-block;
+	border:0.1px solid #888;
+	border-radius:25px;
+	vertical-align:top;
+}
+
+.dashboard .experience .content {
+	width: 275px;
+	display:inline-block;
+	word-wrap:break-word;
+	word-break:break-all;
+	right:0px;
+}
+
+.dashboard .experience .title {
+	display:inline-block;
+	font-size:17.5px;
+	font-weight: 300;
+	margin-left:10px;
+	min-height:25px;
+	width:275px;
+}
+
+.dashboard .experience .buttons {
+	display:inline-block;
+	font-size:17.5px;
+	font-weight: 300;
+	height:25px;
+	width:550px;
+	margin-top:7.5px;
+}
+
+.dashboard .experience .btn {
+	display:inline-block;
+	height:35px;
+	font-size:15px;
+	border-radius:5px;
+	margin-left:10px;
+}
+
+.dashboard .experience .createnew {
+	margin-bottom:25px;
+	
+}
+
+.dashboard .delete {
+	float:right;
+	margin-top:10px;
+	vertical-align:top;
+	font-weight: 300;
+	font-size:50px;
+	border-left:1px solid #888;
+	padding-left:15px;
+}
+
+.notifcount, .experiencecount {
+	display:none;
+}
+
+/* ----- Heart Column Styling ------*/
+
+.dashboard .heart {
+	min-height:75px;
+	width:100%;
+	margin-bottom:30px;
+	display:block;
+	position:relative;
+}
+
+.dashboard .heart img {
+	height:50px;
+	width:50px;
+	margin-top:7.5px;
+	margin-left:7.5px;
+	display:inline-block;
+	border:0.1px solid #888;
+	border-radius:25px;
+	vertical-align:top;
+}
+
+.dashboard .heart .content {
+	width: 275px;
+	display:inline-block;
+	right:0px;
+}
+
+.dashboard .heart .title {
+	display:inline-block;
+	font-size:17.5px;
+	font-weight: 300;
+	margin-left:10px;
+	min-height:25px;
+	width:275px;
+}
+
+.dashboard .heart .buttons {
+	display:inline-block;
+	font-size:17.5px;
+	font-weight: 300;
+	height:25px;
+	width:550px;
+	margin-top:7.5px;
+}
+
+.dashboard .heart .btn {
+	display:inline-block;
+	height:35px;
+	font-size:15px;
+	border-radius:5px;
+	margin-left:10px;
+}
+
+.dashboard .heart .createnew {
+	margin-bottom:25px;
+	
+}
+
+.dashboard .delete {
+	float:right;
+	margin-top:10px;
+	vertical-align:top;
+	font-weight: 300;
+	font-size:50px;
+	border-left:1px solid #888;
+	padding-left:15px;
+}
+
+.notifcount, .heartcount {
+	display:none;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% HOMEPAGE STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+	.homepage .card {
+		position:absolute;
+		left:50%;
+		margin-left:150px;
+		top:50%;
+		margin-top:-200px;
+	}
+	
+	.homepage .introduction {
+		position:absolute;
+		bottom:0px;
+		left:50%;
+		margin-left:-450px;
+		width:600px;
+		text-align:center;
+		top:50%;
+		margin-top:-170px;
+	}
+	
+	.homepage .banner {
+		display:block;		
+		margin:auto;
+		text-align:left;
+		padding:0 20px 0 20px;
+		position:relative;
+		font-size:100px;
+		font-weight:100;
+		line-height:90px;
+		color:black;
+		z-index:60;
+	}
+	
+	.homepage .subbanner {
+		display:block;
+		margin:auto;
+		margin-top:30px;
+		height:50px;
+		text-align:left;
+		position:relative;
+		padding:0 20px 0 20px;
+		font-size:27.5px;
+		font-weight:300;
+		color:black;
+		z-index:60;
+	}
+	
+	.homepage .searchBox {
+		position:relative;
+		display:inline-block;
+		float:left;
+		top:25px;
+		margin:10px 0 25px 20px ;
+		z-index:75;
+		height:70px;
+		width:300px;
+		font-size:25px;
+		background-color:white;
+		border:2px solid #64ecff;
+	}
+	
+	.homepage .searchLocIcon {
+		position:absolute;
+		left:10px;
+		top:22px;
+		color:#666;
+	}
+	
+	.homepage .searchLoc {
+		border: 0px;
+		position:absolute;
+		z-index:75;
+		height:40px;
+		width:250px;
+		font-size:25px;
+		left:35px;
+		top:4px;
+	}
+	
+	.homepage .searchLoc:focus {
+		border:0px;
+	}
+	
+	.homepage .searchLocBtn {
+		height:70px;
+		width:200px;
+		position:relative;
+		z-index:75;
+		font-size:25px;
+		padding:25px 25px 25px 25px;
+		margin:35px 0 0 -40px;
+		display:inline-block;
+	}
+
+	.homepage .sel {
+		width:320px;
+		top:35px;
+		margin:10px 0 0 15px;
+		height:50px;
+		border-radius:0px;
+		position:absolute;
+		box-shadow:1px 1px rgba(200, 200, 200, 0.25);
+	}
+	
+	
+	.homepage .polaroid {
+		display: none;
+	}
+
+@media (max-width : 1000px), (max-height : 700px) {
+	.homepage .card {
+		display:none;
+	}
+	
+	.homepage .introduction {
+		left:50%;
+		margin-left:-280px;
+	}
+	
+	.homepage .banner {
+	}
+}
+
+.pinboard {
+	margin:0 50px 0 50px;
+}
+
+#pmap {
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:11;
+	top:0px;
+	background-color:white;
+}
+
+.demomodal {
+	
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.75) 65%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(65%,rgba(255,255,255,0.75)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.75) 65%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.75) 65%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.75) 65%,rgba(255,255,255,0) 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.75) 65%,rgba(255,255,255,0) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+
+
+
+
+
+
+	height:100%;
+	width:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:50;
+}
+
+.homepage-scroll {
+	position:absolute;
+	top:100%;
+	width:100%;
+	height:300%;
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 1%, rgba(255,255,255,0.1) 2%, rgba(255,255,255,0.2) 4%, rgba(255,255,255,0.3) 6%, rgba(255,255,255,0.4) 8%, rgba(255,255,255,0.5) 10%, rgba(255,255,255,0.6) 12%, rgba(255,255,255,0.7) 14%, rgba(255,255,255,0.8) 16%, rgba(255,255,255,0.9) 18%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(1%,rgba(255,255,255,0.05)), color-stop(2%,rgba(255,255,255,0.1)), color-stop(4%,rgba(255,255,255,0.2)), color-stop(6%,rgba(255,255,255,0.3)), color-stop(8%,rgba(255,255,255,0.4)), color-stop(10%,rgba(255,255,255,0.5)), color-stop(12%,rgba(255,255,255,0.6)), color-stop(14%,rgba(255,255,255,0.7)), color-stop(16%,rgba(255,255,255,0.8)), color-stop(18%,rgba(255,255,255,0.9)), color-stop(20%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.05) 1%,rgba(255,255,255,0.1) 2%,rgba(255,255,255,0.2) 4%,rgba(255,255,255,0.3) 6%,rgba(255,255,255,0.4) 8%,rgba(255,255,255,0.5) 10%,rgba(255,255,255,0.6) 12%,rgba(255,255,255,0.7) 14%,rgba(255,255,255,0.8) 16%,rgba(255,255,255,0.9) 18%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.05) 1%,rgba(255,255,255,0.1) 2%,rgba(255,255,255,0.2) 4%,rgba(255,255,255,0.3) 6%,rgba(255,255,255,0.4) 8%,rgba(255,255,255,0.5) 10%,rgba(255,255,255,0.6) 12%,rgba(255,255,255,0.7) 14%,rgba(255,255,255,0.8) 16%,rgba(255,255,255,0.9) 18%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.05) 1%,rgba(255,255,255,0.1) 2%,rgba(255,255,255,0.2) 4%,rgba(255,255,255,0.3) 6%,rgba(255,255,255,0.4) 8%,rgba(255,255,255,0.5) 10%,rgba(255,255,255,0.6) 12%,rgba(255,255,255,0.7) 14%,rgba(255,255,255,0.8) 16%,rgba(255,255,255,0.9) 18%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.05) 1%,rgba(255,255,255,0.1) 2%,rgba(255,255,255,0.2) 4%,rgba(255,255,255,0.3) 6%,rgba(255,255,255,0.4) 8%,rgba(255,255,255,0.5) 10%,rgba(255,255,255,0.6) 12%,rgba(255,255,255,0.7) 14%,rgba(255,255,255,0.8) 16%,rgba(255,255,255,0.9) 18%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+
+
+
+
+
+
+}
+
+#bgimg0 {
+	
+}
+
+#bgimg1,
+#bgimg2,
+#bgimg3,
+#bgimg4 {
+	display:none;
+}
+
+#demopin0 {
+}
+
+#demopin1,
+#demopin2,
+#demopin3,
+#demopin4 {
+	display:none;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% CALENDAR STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.dateAvailable { 
+	background-color: rgb(46, 204, 113); !important
+	background-color: rgba(46, 204, 113, 0.75); !important
+}
+
+.dateUnavailable { 
+	background-color: rgb(190, 190, 190); !important
+	background-color: rgba(190, 190, 190, 0.2); !important
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% CREATE EXPERIENCE STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+/* ----- Create Experience Basics ----- */
+
+.createexp input[name="createxpduration"], .createxp input[name="createxpprice"], .createxp input[name="createxpmaxattend"], .createxp input[name="createxpminattend"], .createxp input[name="createxplocation"], .createxp input[name="createxpdailyxp"] {
+	width:100px;
+	height:25px;
+	font-size:20px;
+	margin-right:10px;
+}
+
+.createxp .basicscol input[type="number"] {
+	font-weight: 300;
+	right:275px;
+	position:absolute;
+}
+
+/* ----- Create Experience Availability ----- */
+
+.availabilitycol .timesavailable li {
+	width:150px;
+	height:30px;
+	background-color:#64ecff;
+	color:white;
+	list-style:none;	
+	position:relative;
+	display:inline-block;
+	margin: 5px 0 5px 0;
+}
+
+.availabilitycol .timesavailable li span {
+	position:relative;
+	font-size:20px;
+	top:3px;
+	margin:15px 5px 15px 5px;
+}
+
+.availabilitycol .timesavailable li .removetime {
+	padding: 1.5px 2.5px 1.5px 2.5px;
+	right:5px;
+	position:absolute;
+	top:-10px;
+	background-color:white;
+	text-align:center;
+	font-size:15px;
+	color:#64ecff;
+	cursor:pointer;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% PINBOARD STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.pins {
+	margin:auto;
+	position:absolute;
+	top:50px;
+	z-index:15;
+}
+
+#pmap .leaflet-control-container {
+	display:none;
+}
+ 
+/* --- Isotope Styling --- */ 
+ 
+/**** Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** CSS3 transitions ****/
+
+/*.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}*/
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% BOOKER STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.booker {
+	height:525px;
+	margin-top:-245px;
+	width:550px;
+	margin-left:-275px;
+}
+
+.booker .calendar {
+	width:450px;
+	height:250px;
+	position:absolute;
+	display:inline;
+	bottom:190px;
+	right:50px;
+}
+
+.booker .fc-header-left {
+	float:left;
+	margin-left:-50px;
+}
+
+.booker h1 {
+	margin: 10px 0px 0px 50px;
+	width:450px;
+	font-weight:100;
+	-webkit-text-stroke-width:0.75px;
+	font-size:50px;
+}
+
+.booker h4 {
+	margin: 10px 0 0 50px;
+	width:450px;
+	font-size:16px;
+	font-weight: 300;
+}
+
+.booker .next {
+	position:absolute;
+	bottom:10px;
+	left:50px;
+}
+
+.booker .previous {
+	position:absolute;
+	bottom:20px;
+	width:100px;
+	left:120px;
+}
+
+.booker .restrictDateSel {
+	width:450px;
+	font-size:50px;
+    border-color:#999;
+	background-color:white;
+	margin:25px 0 0 50px;
+	font-weight: 300;
+	font-family:"Lato", sans-serif;
+}
+
+.booker .restrictDateSel option {
+	font-size:400px;
+	position:absolute;
+}
+
+.booker .timepick {
+	width:450px;
+	font-size:50px;
+    border-color:#999;
+	background-color:white;
+	margin:15px 0 0 50px;
+	font-weight: 300;
+	font-family:"Lato", sans-serif;
+	
+}
+
+.booker .attendeecount {
+	position:absolute;
+	left:0px;
+	width:100px;
+	font-size:50px;
+    border-color:#999;
+	background-color:white;
+	margin:15px 0 0 50px;
+	font-weight: 300;
+	font-family:"Lato", sans-serif;
+	
+}
+
+.booker .timeselect {
+	display:none;
+	height:100px;
+	position:absolute;
+}
+
+.booker .attendeecount {
+	margin-left:220px;
+}
+
+.booker .timeselect option {
+}
+
+.booker h3, .booker h2 {
+	margin: 5px 0px 0px 50px;
+	font-weight: 300;
+}
+
+.booker .paymentselect {
+	display:none;
+}
+
+.booker #payment-form {
+float:right;
+margin:20px 60px 0 0;
+display:inline;
+}
+
+.booker #payment-form .bookit {
+	margin-top:15px;
+	width:170px;
+}
+
+.booker .invoice {
+	position:absolute;
+	left:50px;
+	margin-top:20px;
+	height:300px;
+	width:250px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% PORTAL STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.modalwindow .login {
+	position:absolute;
+	height:360px;
+	width:280px;
+	left:20px;
+	bottom:20px;
+	border-right: 1px solid black;
+}
+
+.modalwindow .login .title {
+	width:100%;
+	text-align:left;
+	font-size:34px;
+	font-weight: 300;
+	margin-bottom:20px;
+	
+}
+
+.modalwindow .login .forgotpasswordbtn {
+	width:100%;
+	text-align:left;
+	font-size:14px;
+	font-weight: 300;
+	padding-bottom:10px;
+	cursor:pointer;
+}
+
+.modalwindow .login .forgotpasswordbtn:hover {
+	color:#64ecff;
+	cursor:pointer;
+}
+
+.modalwindow .login .forgotpasswordbtn:active {
+	color:#AAF5FF;
+}
+
+.modalwindow .login #loginsubmit {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	left:0px;
+	z-index:10;
+	width:160px;
+}
+
+.modalwindow .login #loginsubmit:hover {
+	background-color:#AAF5FF;
+	color: white;
+	cursor:pointer;
+}
+
+.modalwindow .login #loginsubmit:active {
+	background-color:#15CEE8;
+	color:white;
+}
+
+.modalwindow .signup {
+	position:absolute;
+	height:360px;
+	width:230px;
+	right:40px;
+	bottom:20px;
+}
+
+.modalwindow .signup .title {
+	width:100%;
+	text-align:left;
+	font-size:34px;
+	font-weight: 300;
+	margin-bottom:20px;
+}
+
+.modalwindow .signup .signupfname {
+	width:90px;
+}
+
+.modalwindow .signup .signuplname {
+	width:85px;
+}
+
+.modalwindow .signup .password {
+	display:block;
+}
+
+.modalwindow .signup .signuplegal {
+	width:20px;
+	margin-top:20px;
+	display:inline-block;
+}
+
+.modalwindow .signup label {
+	font-size:10px;
+}
+
+.modalwindow .signup label a {
+	color:#64ecff;
+}
+
+.modalwindow .signup #signupsubmit {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	left:0px;
+	z-index:10;
+	width:160px;
+}
+
+.modalwindow .signup #signupsubmit:hover {
+	background-color:#AAF5FF;
+	color: white;
+	cursor:pointer;
+}
+
+.modalwindow .signup #signupsubmit:active {
+	background-color:#15CEE8;
+	color:white;
+}
+
+.modalwindow #forgotpassword {
+	display:none;
+	height:300px;
+	width:500px;
+	margin-top:50px;
+	margin-left:50px;
+	text-align:center;
+}
+
+.modalwindow #forgotpassword #title {
+	font-size:22px;
+	font-weight: 300;
+	margin-bottom:20px;
+}
+
+.modalwindow #forgotpassword #forgotpassemail {
+	font-size:22px;
+	font-weight: 300;
+	margin-bottom:20px;
+	width:400px;
+}
+
+.modalwindow #forgotpassword #forgotpasssubmit {
+	border-radius:5px;
+	margin-bottom:20px;
+}
+
+.modalwindow #forgotpassword .btn{
+	border-radius:5px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% INTRODUCTION STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.introduction .welcome {
+	display:inline;
+}
+
+.introduction .locationsel #map {
+	height:480px;
+	width:480px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% BOOKING STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.modalwindow .booking {
+	position:absolute;
+	width:560px;
+	height:360px;
+	left:20px;
+	margin-top:20px;
+}
+
+.modalwindow .booking span {
+	display:block;
+	font-size:20px;
+	margin:15px;
+	max-width:250px;
+}
+
+.modalwindow .booking img {
+	position:absolute;
+	right:20px;
+	top:15px;
+}
+
+
+	
+	
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% MESSENGER STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.messenger {
+	position:absolute;
+	width:560px;
+	height:240px;
+	left:20px;
+}
+
+.messenger input { 
+	height:15px;
+	font-size:15px;
+	padding-top:5px;
+	width:450px;
+}
+
+.messenger .subjectinput {
+	margin-bottom:20px;
+}
+
+.messenger .btn {
+	margin-top:250px;
+}
+
+.message {
+	position:absolute;
+	width:560px;
+	height:300px;
+	left:20px;
+}
+
+.message .content {
+	position:absolute;
+	width: 510px;
+	height:200px;
+	padding:10px 10px 10px 10px;
+	border: 2px solid #CCC;
+	overflow:scroll;
+	word-wrap: break-word;
+}
+
+.messenger .messageinput {
+	position:absolute;
+	width: 510px;
+	height:200px;
+	padding:10px 10px 10px 10px;
+	border: 2px solid #CCC;
+	overflow:scroll;
+	word-wrap: break-word;
+}
+
+.message .btn {
+	position:absolute;
+	bottom: -80px;
+}
+
+.reply {
+}
+ 
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% FOOTER STYLING %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+#footer {
+	position:fixed;
+	background-color: rgba(100, 236, 255, 0.75);
+	background-color: rgb(100, 236, 255);
+	color: #333;
+	font-weight: 300;
+	height:50px;
+	width:50px;
+	left:0px;
+	bottom:0px;
+	z-index:150;
+	cursor:pointer;
+}
+
+#footer .option {
+	height:30px;
+	width:30px;
+	display:inline-block;
+	padding:10px;
+}
+
+#footer .option:hover {
+	background-color:#a2f3ff;
+}
+
+#footer i {
+	font-size:30px;
+	width:30px;
+	height:30px;
+	color:white;
+}
+
+#footer .title {
+	display:inline-block;
+	height:40px;
+	width:200px;
+	margin-top:5px;
+	margin-left:20px;
+	color:white;
+	font-size:25px;
+	text-align:center;
+	font-weight: 300;
+}
+

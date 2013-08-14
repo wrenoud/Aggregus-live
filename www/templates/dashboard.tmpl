@@ -1,0 +1,104 @@
+<div class="dashboard">
+
+<div class="sidecol">
+	<div class="name"><%= name.first %> <%= name.last %></div>
+    <div class="profileimg">
+    	<img src="<%= profileimg %>" />
+    </div>
+    <div class="menu">
+    	<div data-id="notifcol" class="item selected"><div class="count notifcount"></div><span>Notifications</span></div>
+        <div data-id="messagecol" class="item"><div class="count msgcount"></div><span>Messages</span></div>
+        <div data-id="myexperiencescol" class="item"><span>My Experiences</span></div>
+        <div data-id="mybookingscol" class="item"><div class="count bookingcount"></div><span>My Bookings</span></div>
+		<div data-id="myheartscol" class="item"><span>My Hearts</span></div>
+        <div data-id="editprofilecol" class="item"><span>Edit Profile</span></div>
+        <div data-id="settingscol" class="item"><span>Settings</span></div>
+    </div>
+</div>
+
+<div class="messagecol dashgencol">	</div>
+
+<div class="myexperiencescol dashgencol">
+	<div class="xps"></div>
+	<button name="createxp" class="btn" style="margin:10px 10px 0 70px;width:130px;height:50px;font-size:15px;line-height:100%;">Create a New Experience!</button><a href="/#experiences"><button class="btn" style="margin:10px 100px 0 0;width:130px;height:50px;font-size:15px;line-height:100%;">View Current Experiences</button></a>
+</div>
+
+<div class="mybookingscol dashgencol"></div>
+
+<div class="myheartscol dashgencol"></div>
+
+<div class="editprofilecol dashgencol">
+	<label for="user-namesetting">First Name: </label><br />
+	<input type="text" name="user-firstnamesetting" value="<%= name.first %>"></input>
+	<input type="text" name="user-lastnamesetting" value="<%= name.last %>"></input>
+	<p>
+	<label for="user-locationsetting">Your Current Location: </label><br />
+	<input type="text" name="user-locationsetting" value="<%= location.normal %>"></input><button style="padding:10px 10px 9px 10px" class="btn locationsettingreset">Locate</button>
+	<div style="height:250px;width:480px" id="locsettingmap"></div>
+	<p>
+	<label style="vertical-align:top" for="user-descriptionsetting">Your Description: </label>
+	<textarea type="text" cols="64" rows="5" name="user-descriptionsetting"><%= description %></textarea>
+	<p>
+	<label for="user-facebookurl">Facebook Username:</label><br />
+	<input placeholder="None set..." type="text" style="width:465px" name="user-facebookurl" value="<% if (social.facebook) { %><%= social.facebook %><%} else {%><% }%>"></input>
+	<p>
+	<label for="user-twitterurl">Twitter Username:</label><br />
+	<input placeholder="None set..." type="text" style="width:465px" name="user-twitterurl" value="<% if (social.twitter) { %><%= social.twitter %><%} else {%><% }%>"></input>
+	<p>
+	<label for="user-pinteresturl">Pinterest Username:</label><br />
+	<input placeholder="None set..." type="text" style="width:465px" name="user-pinteresturl" value="<% if (social.pinterest) { %><%= social.pinterest %><%} else {%><% }%>"></input>
+	<p>
+	<label for="userxpphotos">Imgur Photo Album: </label>&nbsp;&nbsp;<a href="http://blog.aggregus.com/post/55311756661/upload-your-beautiful-pictures-to-aggregus" target="_blank">How do I upload photos?</a><br />
+    <input style="width:200px" value="<% if (photoURL) {%> Enter new album URL here... <%} else {%>None yet!<% }%>" type="text" name="userphotos" id="userphotos" /><button style="padding:10px 20px 10px 20px; font-size:15px;" class="btn previewAlbumStart">Preview</button><br />
+	<p>
+	<div class="previewAlbum"><%= photoURL %></div>
+	<p>
+	<div>
+		<button style="margin-bottom:15px" class="btn" name="profileimageupload">Upload New Profile Image</button>
+	</div>
+	<div>
+		<img width="250" src="<%= profileimg %>" name="profileimagepreview" />
+	</div>
+	<p>
+	<div>
+		<button style="margin-bottom:15px" class="btn" name="coverimageupload">Upload New Cover Image</button>
+	</div>
+	<div>
+		<img width="475" src="<%= coverimg %>" name="coverimagepreview" />
+	</div>
+	<p>
+	<button class="updatesettings btn">Update Profile</button><img style="visibility:hidden" class='loading' src="http://d2qjfe4gq0m6av.cloudfront.net/assets/helpreq3.gif" /><a href="/#profile/<%= aggid %>"><button class="btn">View Profile</button></a>
+</div>
+
+<div class="settingscol dashgencol">
+	
+	<h3>Host Account Balance</h3>
+	<div style="margin-top:-25px;font-size:150px;font-weight:100">$<%= balanceOwed %></div>
+	<button style="margin-top:5px" class="requestPayout btn">Request Payout</button>
+	
+	<h3>Change Account Email</h3>
+	<input class="changeaccountemailinput" type="text" style="width:250px" value="<%= email %>"></input><br/>
+	<button style="margin-top:5px" class="changeaccountemail btn">Update</button>
+	
+	<h3>Change Account Password</h3>
+	<input class="changeaccountpasswordinputold" type="password" placeholder="Enter your current password..." style="width:250px"></input><br/>
+	<input class="changeaccountpasswordinputnew" type="password" placeholder="Enter your new password..." style="width:250px"></input><br/>
+	<button style="margin-top:5px" class="changeaccountpassword btn">Update</button>
+	
+	<h3>Update Deposit Information<br /> (<a href="https://www.aggregus.com/#privacy">View Our Privacy Policy</a>)</h3>
+	<input class="bankName" type="text" style="width:250px" placeholder="Legal Name on Account"></input><input class="bankTaxId" type="text" style="width:250px" placeholder="SSN (Individuals) or EIN (Corporations)"></input>
+	<input class="bankRouting" type="text" style="width:250px" placeholder="Routing #"></input><input class="bankAccount" type="text" style="width:250px" placeholder="Account #"><br/>
+	<select class="bankType">
+		<option value="null" selected="true">Choose Bank Account Type</option>
+		<option value="individual">Individual</option>
+		<option value="corporation">Corporation</option>
+	</select>
+	<button style="margin-top:5px" class="changebankaccount btn">Update</button>
+	
+	<h3>Delete Account</h3>
+	<button onclick="alert('Please stay! Simply send a message to support@aggregus.com if you are absolutely sure, but could we tempt you stay with some awesome stickers? Or a T-Shirt? Or may a chance to win a free experience?');" class="deleteaccountpre btn">Delete Account</button>
+</div>
+
+<div class="notifcol dashgencol"></div>
+
+</div>

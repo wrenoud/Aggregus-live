@@ -1,0 +1,100 @@
+<div class="editxp process">
+
+<div class="sidecol">
+	<div class="process-name">Manage Experience</div>
+    <div class="menu">
+        <div data-id="basicscol" class="item item1 selected"><span>Basic Details</span></div>
+        <div data-id="mediacol" class="item item2"><span>Edit Photos</span></div>
+        <div data-id="availabilitycol" class="item item3"><span>Edit Availability</span></div>
+		<div data-id="rostercol" class="item item4"><span>Manage Bookings</span></div>
+    </div>
+	<div style="height:1px;width:200px;background-color:black;margin:25px 50px 25px 50px;"></div>
+	<button style="width:250px;margin:0 25px 0 25px;height:50px;font-size:30px;" class="updatexp btn">Update </button><br />
+	<img style="visibility:hidden;margin:10px 125px 0 125px" width="50" class='loading' src="http://d2qjfe4gq0m6av.cloudfront.net/assets/loading-circle.gif" />
+</div>
+
+<div class="rostercol maincol">
+	<h1>Manage Bookings</h1>
+	<h3>By selecting a date on the calendar below, you can create generate a booking roster, view specific bookings, send cancellation notices, and more. If you are in need of a service not provided here, send a help message via the (?) button in the navigation bar.</h3>
+	<div id='bookingCalendar'></div>
+</div>
+
+<div class="maincol basicscol open">
+    <h3 style="font-weight:500;color:red;" class="error"></h3>
+	<label for="editxpname">Experience Title: </label>
+    <input style="width:465px;display:block;" value="<%= name %>" type="text" name="editxpname"/>
+	<p>
+    <label style="vertical-align:top" for="editxpdesc">Description: </label>
+    <textarea maxlength="600" rows="5" cols="5" style="width:465px;font-size:15px;display:block;" id="textplace" name="editxpdesc"><%= description %></textarea>
+	<p>
+	<label style="vertical-align:top" for="editxpspecialinstr">Guest Instructions: </label>
+    <textarea maxlength="600" rows="5" cols="5" style="width:465px;font-size:15px;display:block;" id="textplace" name="editxpspecialinstr"><%= guestInstructions %></textarea>
+	<p>
+    <label class="editxplocation" title="Enter a location in the box to the right, then press 'Locate!'.<br /> If your experience's location appears on the map then it has been confirmed." for="editxplocation">Location: </label><br />
+	<input name="editxplocation" value="<%= location.normal %>" type="text" style="width:310px" class="locationentry" />
+	<button style="width:150px;padding:10px 9px 9px 9px" class="editxplocation btn">Locate</button>
+  	<div id="processmap"></div>
+	
+	<p><label for="editxpmaxattend">Maximum # of Attendees: </label>
+    <input min="1" max="99" value="<%= attendees.maximum %>" type="number" onkeyup="if (this.value > this.max) {this.value = this.max}" style="width:60px" name="editxpmaxattend"/></p>
+	
+	<p><label for="editxpminattend">Minimum # of Attendees: </label>
+    <input min="1" value="<%= attendees.minimum %>" type="number" style="width:60px" name="editxpminattend"/></p>
+	
+	<p><label for="editxpprice">Price Per Attendee (USD): </label>
+    <input min="5" max="999" onkeyup="if (this.value > this.max) {this.value = this.max}" type="number" style="width:60px" value="<%= price %>" name="editxpprice"/></p>
+	
+	<p><label for="editxpduration">Duration (In Hours): </label>
+    <input min="1" max="24" onkeyup="if (this.value > this.max) {this.value = this.max}" type="number" value="<%= duration %>" style="width:60px" name="editxpduration"/></p>
+
+	<p><label data-tip="This is a big one. A mixed group is a group in which different guests come together at the same time for the same experience. Prohibiting mixed groups is useful if you need to transport yourself to a particular guest's location, or otherwise cannot serve to disparate groups of guests at once." for="editxpexclusive"><b>Do you want to prohibit mixed groups?</b> </label>
+    <input style="width:50px;margin:10px 0 0 50px;" <% if (permitMixed == true) {%>checked="true"<%} else {%><%} %> type="checkbox" name="editxpexclusive"/></p>
+	<br/>
+	<div>
+		<label for="profileimageupload">Profile Image:</label><br />
+		<button style="margin:15px 0 15px 0;width:300px;height:30px;font-size:20px;" class="btn" name="profileimageupload">Upload New Profile Image</button>
+	</div>
+	<div>
+		<img style="margin-bottom:20px" width="250" src="<%= profileimg %>" name="profileimagepreview" />
+	</div>
+	<p>
+	<div>
+		<label for="coverimageupload">Cover Image:</label><br />
+		<button style="margin:15px 0 15px 0;width:300px;height:30px;font-size:20px;" class="btn" name="coverimageupload">Upload New Cover Image</button>
+	</div>
+	<div>
+		<img style="margin-bottom:20px" width="465" src="<%= coverimg %>" name="coverimagepreview" />
+	</div>
+	<h3 style="font-weight:500;color:red;" class="error"></h3>
+	
+</div>
+
+<div class="maincol mediacol">
+	<h1>Let's add some pictures.</h1>
+    <h3>Aggregus partners with Imgur to make adding photos to your experience quick and simple. Take a few snapshots of yourself, your experiences's location, and other awesome stuff, then upload it to Imgur <a href="http://www.imgur.com" target="_blank">here</a>. If you haven't created an album on Imgur before, read our tutorial <a href="http://blog.aggregus.com/post/55311756661/upload-your-beautiful-pictures-to-aggregus" target="_blank">on our Tumblr</a>. Otherwise, simply drop a link to your Imgur album in the text box below and we'll take care of the rest! Make sure to preview your album first to make sure its to your liking.</h3>
+     <label for="editxpphotos">Enter Imgur Album URL: </label><br />
+    <input style="width:200px" type="text" name="editxpphotos" id="editxpphotos" /><button style="padding:10px 20px 10px 20px; font-size:15px;" class="btn previewAlbumStart">Preview</button><br />
+		<p>
+	<div class="previewAlbum"><%= photoURL %></div>
+	<p>
+</div>
+
+<div class="maincol availabilitycol ">
+	<h1>What times are you available?</h1>
+	<h3>Start by listing what times of the day you are available to host this experience, and then choose the days you are most available to host. Listing more days as available will increase the number of possible attendees, but users can still inquire regarding days you have not listed as "Most Available". Users will not be able to inquire about dates you have listed as "Not Available".</h3>
+	<select class="timeselect">
+	</select>
+	<button class="btn addtime">Add Time</button>
+	<div class="timesavailable" style="maxheight:150px">
+	</div>
+	<div style="height:1px;width:495px;background-color:black;margin:15px 0px 15px 0px"></div>
+	<h1>What dates are you available?</h1>
+	<h3>By default, guests may book any date and await your confirmation. However, we allow you to select particular days as especially available, or as not available at all. Simply select a date below to mark it as "Available", "Maybe", or "Unavailable". Days marked as "Maybe" are uncolored, whereas "Available" days are green and "Unavailable" days are red.</h3>
+	<label data-tip="A powerful feature! This option allows you to allow people to book only those dates you set as 'Available'. This is handy if your experience is only running once or twice, then ending." for"restrictDatesSelect">Restrict Bookings to Available Dates:</labeL><input <% if (restrictDates == true) {%>checked="true"<%} else {%><%} %> style="margin:0 0 0 20px" type="checkbox" name="restrictDatesSelect" />
+    <input style="width:480px" type="hidden" name="editxpdateholder"/>
+	<p>
+	<div id='calendar'></div>
+	<p>
+</div>
+
+</div>

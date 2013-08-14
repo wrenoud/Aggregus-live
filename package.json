@@ -1,0 +1,24 @@
+{
+  "name": "Aggregus",
+  "subdomain": "aggregus-Aggregus",
+  "domains": [
+    "aggregus.com",
+    "www.aggregus.com"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "0.0.0-30",
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "connect": "2.7.8",
+    "express": "3.2.2",
+    "jade": "0.30.0",
+    "mongoose": "3.6.9",
+    "node-mandrill": "1.0.1",
+    "stripe": "git://github.com/wrenoud/node-stripe.git",
+    "underscore": "1.4.4"
+  }
+}

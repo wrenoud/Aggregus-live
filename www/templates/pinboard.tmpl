@@ -1,0 +1,19 @@
+<div id="pmap"></div>
+<div class="pinboard">
+<div class="searchmenu"></div>
+<div class="pins" style="overflow:auto">
+
+</div>
+</div>
+
+<script>
+
+var map = L.map('pmap',{touchZoom: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, dragging: false}).setView([<%= searchLat %>, <%= searchLng %>], 14);
+
+L.tileLayer('http://a.tiles.mapbox.com/v3/aggregus.map-keakb9ot/{z}/{x}/{y}.png', {
+	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+	maxZoom: 18
+}).addTo(map);
+
+</script>
+

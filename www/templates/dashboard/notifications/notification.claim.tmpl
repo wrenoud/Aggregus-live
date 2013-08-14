@@ -1,0 +1,18 @@
+<div class="notification">
+    
+    	<img src="<%= origin.profileimg %>">
+		
+        <span class="title"><a><%= origin.name.first %> <%= origin.name.last %><a/> has filed a claim regarding your experience <a><%= experience.name %></a>. Aggregus will contact you shortly to discuss this claim and what can be done to resolve it.
+        
+			<span class="buttons">
+				<button class="btn">View Claim</button>
+				<button data-profileid="<%= origin.aggid %>" class="viewprofilebtn btn">View <%= origin.name.first %>'s Profile</button>
+			</span>
+			
+		</span>
+            
+		<div data-id="<%= aggid %>" class="delete">
+			<i class="icon-remove-circle"></i>
+		</div>
+        
+</div>

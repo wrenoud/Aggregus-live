@@ -1,0 +1,18 @@
+	<div class="notification ">
+    
+    	<img src="<%= origin.profileimg %>">
+		
+         <span class="title"><a><%= origin.name.first %> <%= origin.name.last %><a/> wants to book your experience <a><%= experience.name %></a> on May 31st<a/>
+        
+			<span class="buttons">
+				<button data-id="<%= origin.aggid %>" class="createmessage btn">Message <%= origin.name.first %></button>
+				<a href="/#profile/<%= origin.aggid %>"><button class="viewprofilebtn btn">View <%= origin.name.first %>'s Profile</button></a>
+			</span>
+			
+		</span>
+            
+		<div data-id="<%= aggid %>" class="delete">
+			<i class="icon-remove-circle"></i>
+		</div>
+        
+    </div>

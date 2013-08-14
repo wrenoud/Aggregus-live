@@ -1,0 +1,15 @@
+<div class="booking">
+    
+    	<img src="<%= experience.profileimg %>">
+		
+		<span class="content">
+  
+  		<span class="title">You booked <a href="/#experience/<%= experience.aggid %>"><%= experience.name %></a><br/>Date: <%= dateBooked.date %><br />Time:<% var intime = window.clock[dateBooked.time *2] %> <%= intime %><br /> Status: <% if (confirmed == false) {%><span style="color:red">Waiting for Confirmation</span><%} else if (confirmed == true) {%><span style="color:green">Confirmed</span><%}%></span>
+  
+  		<span class="buttons">
+				<button class="btn viewbooking">View Booking</button>
+		</span>
+			
+		</span>
+        
+    </div>

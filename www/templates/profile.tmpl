@@ -1,0 +1,49 @@
+<img src="<%= coverimg %>" class="background" />
+
+<div class="profile">
+
+<div class="card experience notouch">
+            <img height="250" width="250" src="<%= profileimg %>" />
+     <div class="inner">
+            <div style="left:0px" class="name"><%= name.first %> <%= name.last %></div>
+            <div style="text-align:left"  class="location"><%= location.normal %></div>
+     </div>
+     <div class="contact createmessage"><span>Contact Me!</span></div>
+</div>
+
+<div class="polaroid notouch">
+    <div class="title">About</div>
+            <div class="menu">
+                <div data-id='menu' class="select"><i style="margin-left:12.5px;" class="icon-ellipsis-vertical"></i></div>
+                <div class="options">
+                        <div data-id='about' class="chosen"><i style="margin-left:2.5px;" class="icon-info-sign"></i></div>
+                        <div data-id='reviews' class="option"><i style="margin-bottom:2.5px;" class="icon-comment"></i></div>
+                        <div data-id='experiences' class="option"><i style="margin-left:-1px;" class="icon-group"></i></div>
+                        <div data-id='where' class="option"><i style="margin-left:5px;" class="icon-map-marker"></i></div> 
+                        <div data-id='photos' class="option"><i style="margin-left:0px;" class="icon-picture"></i></div>
+                </div>
+            </div>
+			<div class="hovername"><span>Hello</span></div>
+            <div id="map" class="item where"></div>
+			<div id="map" class="item experiences">
+			</div> 
+            <div class="item reviews">
+               <!-- <div class="review">
+                    <div>"This was a genuinely awesome experience - we had an awesome time and so did our friends Michael and Dan. They're going back for sure!"
+                    <span>by Jennifer Marsh</span>
+                    </div>
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHXcgZNRdeOui2pAeeJP3NHz9vUkXQNaoAPoE-pwx0JZeVz9Ux9Q" />
+                </div>-->
+				<span>This user has not yet received any reviews.</span>
+            </div>
+            <div class="item photos"><% if (photoURL) {%><%= photoURL %><%} else { %> This user has not uploaded photos yet. <% } %><br/></div>
+            <div overflow-y:scroll;overflow-x:hidden;" class="item selected about"><div style="<% if (social.facebook || social.twitter || social.pinterest) { %>width:280px;<% } else { %><% } %>="><% if (description != undefined && description != "") {%><%= description %><%} else { %> This user has not uploaded a description yet. <% } %></div>
+				<div class="shareContainer">
+						<% if (social.facebook) { %><a href="http://www.facebook.com/<%= social.facebook %>" target="_blank"><div class="sharebox"><i style="margin-left:7px" class="icon-facebook"></i></div></a><% } else { } %>
+						<% if (social.twitter) { %><a href="http://www.twitter.com/<%= social.twitter %>" target="_blank"><div class="sharebox"><i style="margin-left:2px" class="icon-twitter"></i></div></a><% } else { } %>
+						<% if (social.pinterest) { %><a href="http://www.pinterest.com/<%= social.pinterest %>" target="_blank"><div class="sharebox"><i style="margin-left:2px" class="icon-pinterest"></i></div></a><% } else { } %>
+				</div>
+			</div>
+    </div>
+</div>
+</div>           

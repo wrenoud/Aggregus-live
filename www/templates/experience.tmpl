@@ -1,0 +1,70 @@
+<img src="<%= coverimg %>" class="background" />
+<meta property="og:image" content="<%= profileimg %>"/>
+<div class="experience">
+
+<div class="card experience">
+            <img height="250" width="250" src="<%= profileimg %>" />
+     <div class="inner">
+            <div class="title"><%= name %></div><br />
+            <div class="author">by <a href="/#profile/<%= creator.aggid %>"><%= creator.name.first %> <%= creator.name.last %></a></div>
+            <div class="price">$<%= price %></div>
+            <div class="buy"><span>Book It!</span></div>
+     </div>
+</div>
+
+<div class="polaroid">
+    <div class="title">About</div>
+            <div class="menu">
+                <div data-id='menu' class="select"><i style="margin-left:12.5px;" class="icon-ellipsis-vertical"></i></div>
+                <div class="options">
+                        <div data-id='about' class="chosen"><i style="margin-left:2.5px;" class="icon-info-sign"></i></div>
+                        <div data-id='reviews' class="option"><i style="margin-bottom:2.5px;" class="icon-comment"></i></div>
+                        <div data-id='host' class="option"><i style="margin-left:4px;" class="icon-user"></i></div>
+                        <div data-id='where' class="option"><i style="margin-left:5px;" class="icon-map-marker"></i></div> 
+                        <div data-id='photos' class="option"><i style="margin-left:0px;" class="icon-picture"></i></div>
+                </div> 
+            </div>
+			<div class="social">
+				<div class="share"><i style="margin-left:2.5px;" class="icon-share-alt"></i></div>
+			</div>
+			<div class="hovername"><span>Hello</span></div>
+            <div id="map" class="item where"></div> 
+            <div class="item reviews">
+			    <!-- <div class="review">
+                    <div>"This was a genuinely awesome experience - we had an awesome time and so did our friends Michael and Dan. They're going back for sure!"
+                    <span>by Jennifer Marsh</span>
+                    </div>
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHXcgZNRdeOui2pAeeJP3NHz9vUkXQNaoAPoE-pwx0JZeVz9Ux9Q" />
+                </div>-->
+				<span>This experience has not yet received any reviews.</span>
+            </div>
+            <div class="item photos"><%= photoURL %></div>
+            <div style="overflow-y:scroll;overflow-x:hidden;" class="item selected about">
+			
+				<!--<div class="floatHeader">Experience Details</div>
+				<div class="specs">
+						<div><%= duration %> <span>Hours</span></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div><% if (attendees.minimum == attendees.maximum) {%><%= attendees.minimum %><%} else {%><%= attendees.minimum %> - <%= attendees.maximum %><%} %> <span>Guests</span></div>
+				</div>
+				<div class="floatHeader">Description</div>-->
+				<div class="xpdetails"><i style="float:left" class="icon-time"> <span>1&#189; Hours</span></i><i style="margin-left:10px;" class="icon-group"> <span>1 - 8 Guests</span></i><i style="margin-right:5px;float:right" class="icon-heart"> <span>3</span></i></div>
+				<div style="width:250px;height:1px;margin:auto;margin-top:10px;margin-bottom:10px;background-color:#DDD;position:relative;z-index:1000000"></div>
+				<div style="width:350px;"><%= description %></div>
+                <div class="whois">
+                    <img style="vertical-align:bottom;margin-top:20px;height:50px;width:50px;border-radius:25px;" src="<%= creator.profileimg %>" />
+                    <div class="whoisinner">
+                    <a href="/#profile/<%= creator.aggid %>"><span style="color:#64ceff;font-size:20px;"><%= creator.name.first %> <%= creator.name.last %></span></a><br />
+                    <span>Your Host</span><br />
+					<div class="shareContainerHost">
+					<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.aggregus.com%2Fsharexp%2F<%= aggid %>%2F%23experience%2F<%= aggid %>" target="_blank"><div class="fb sharebox"><i style="margin-left:7px" class="icon-facebook"></i></div></a>
+					<a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Ftwitter.com%2Fabout%2Fresources%2Fbuttons&text=<%= name %>, by <%= creator.name.first %> <%= creator.name.last %> - &tw_p=tweetbutton&url=https%3A%2F%2Fwww.aggregus.com%2Fsharexp%2F<%= aggid %>%2F%23experience%2F<%= aggid %>&via=hiAggregus" target="_blank"><div class="twitter sharebox"><i style="margin-left:2px" class="icon-twitter"></i></div></a>
+					<a href="//pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.aggregus.com%2Fsharexp%2F<%= aggid %>%2F%23experience%2F<%= aggid %>&media=<%= profileimg %>&description=<%= name %>%2C%20by%20<%= creator.name.first %>%20<%= creator.name.last %>.%20Available%20on%20Aggregus.com." target="_blank"><div class="pinterest sharebox"><i style="margin-left:2px" class="icon-pinterest"></i></div></a>
+					</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item host">
+            </div>
+    </div>
+</div>
+
+</div>

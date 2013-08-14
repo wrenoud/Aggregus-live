@@ -1,0 +1,11 @@
+#main {
+	position:absolute;
+	width:400px;
+	height:400px;
+	left:50%;
+	top:50%;
+	margin-left:-200px;
+	margin-top:-200px;
+	color:red;
+	background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/assets/IE8Warning.png');
+}

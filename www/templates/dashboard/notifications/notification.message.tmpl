@@ -1,0 +1,18 @@
+   <div data-id="<%= aggid %>" data-msgid="<%= action %>" class="notification">
+    
+    	<img src="<%= origin.profileimg %>">
+		
+        <span class="title"><a><%= origin.name.first %> <%= origin.name.last %><a/> has sent you a message.
+        
+			<span class="buttons">
+				<button data-messageid="<%= action %>" class="viewmessage btn">View Message</button>
+				<button data-profileid="<%= origin.aggid %>" class="viewprofile btn">View <%= origin.name.first %>'s Profile</button>
+			</span>
+			
+		</span>
+		
+		<div data-id="<%= aggid %>" class="delete">
+			<i class="icon-remove-circle"></i>
+		</div>
+        
+    </div>

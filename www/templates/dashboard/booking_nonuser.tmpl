@@ -1,0 +1,16 @@
+<div class="booking">
+    
+    	<img src="<%= experience.profileimg %>">
+		
+		<span class="content">
+  
+  		<span class="title">Name: <a href="/#profile/<%= booker.aggid %>"><%= booker.name.first %> <%= booker.name.last %></a><br />Experience: <a href="/#experience/<%= experience.aggid %>"><%= experience.name %></a><br /> Date: <%= dateBooked.date %><br />Time: <% var intime = window.clock[dateBooked.time *2] %><%= intime %><br />Status: <% if (confirmed == true) { %>Confirmed<% } else { %>Not Confirmed<% } %></span>
+  
+  		<span class="buttons">
+				<% if (confirmed == false) { console.log(status);%><button data-id="<%= aggid %>" class="btn confirm">Confirm</button><% } else { %><button data-id="<%= aggid %>" class="btn cancelbooking">Cancel Booking</button><%} %>
+				<button class="btn viewbooking">View Booking</button>
+		</span>
+			
+		</span>
+        
+    </div>

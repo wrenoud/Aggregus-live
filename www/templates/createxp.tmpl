@@ -1,0 +1,117 @@
+<div class="process createxp">
+
+<div class="sidecol">
+	<div class="process-name">Create an Experience</div>
+    <div class="menu">
+    	<div data-id="termscol" class="item item0 selected"><div style="display:auto" class="count">1</div><span>Let's Begin!</span></div>
+        <div data-id="basicscol" class="item item1"><div style="display:auto" class="count">2</div><span>Basic Details</span></div>
+        <div data-id="mediacol" class="item item2"><div style="display:auto" class="count">3</div><span>Photos</span></div>
+        <div data-id="availabilitycol" class="item item3"><div style="display:auto" class="count">4</div><span>Your Availability</span></div>
+        <div data-id="finishcol" class="item item4"><div style="display:auto" class="count">5</div><span>Finished!</span></div>
+    </div>
+</div>
+
+<div class="maincol termscol">	
+	<h1>It all begins here.</h1>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;We're so excited to share your experience with the Aggregus community. And lucky you - as a part of the Aggregus Marketplace, you can have one of our on-staff Ninjas give you protips on how to craft your experience. You can either click the (?) button in the navigation bar, or email <a href="mailto:hi@aggregus.com">hi@aggregus.com</a>, to alert a ninja to your aid.<br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;We want to help make the Aggregus Marketplace a wonderful place for both hosts and guests, so if you receive a note from us about possibly revising an element or two of your experience, be ye not afraid! If you're ready to take the plunge, and only after you've <b>thoroughly reread our <a href="/#terms" target="_blank">Terms and Conditions</a></b>, click "Begin" below. Rock and Roll!</h3>
+    <button data-show="basicscol" data-hide="termscol" class="btn goto next">Begin!</button>
+    <p>
+</div>
+
+<div class="maincol basicscol">
+	<h1>First, let's get some basic information about your experience.</h1>
+    <h3>As a host, it is your responsibility to ensure your attendees are well informed before booking your experience. Ensure that your experiece is outlined from beginning to end, and invite them to contact you if they have any questions. <b>Not sure about how to answer a particular field? Simply click on it's title to learn more.</b></h3>
+    <h3 style="font-weight:500;color:red;" class="error"></h3>
+	<label data-tip="Prenominate to predominate - give your experience a name that stands out and excites!" for="createxpname">Experience Title: </label>
+    <input style="width:465px;display:block;" type="text" name="createxpname"/>
+	
+    <label data-tip="In 600 characters or less, describe your experience. The trick here is to balance description with engagement - make sure your experience is well described and that, after reading it, you yourself would want to try it." style="vertical-align:top" for="createxpdesc">Description: </label>
+    <textarea maxlength="600" rows="5" cols="5" style="width:465px;font-size:25px;display:block;" id="textplace" name="createxpdesc"></textarea>
+	<p>
+    <label data-tip="These instructions will be sent to your guests once they book your experience. Tell them what to expect, both with regards to communications and any specific location details." style="vertical-align:top" for="createxpspecialinstr">Guest Instructions: </label>
+    <textarea maxlength="600" rows="5" cols="5" style="width:465px;font-size:25px;display:block;" id="textplace" name="createxpspecialinstr"></textarea>
+	<p>
+    <label data-tip="Be sure to give as exact a location as possible - the more specific the location, the more comfortable guests will be signing up for your experience." class="createxplocation" for="createxplocation">Location: </label><br/>
+	<input name="createxplocation" type="text" style="width:300px" class="locationentry" />
+	<button style="width:150px;padding:10px;font-size:20px;" class="createxplocation btn">Locate</button>
+  	<div id="processmap"></div>
+	
+    <p><label data-tip="What's the maximum number of people you can host per experience?" for="createxpmaxattend">Maximum # of Attendees: </label>
+    <input min="1" max="99" onkeyup="if (this.value > this.max) {this.value = this.max}" value="1" style="width:60px" type="number" name="createxpmaxattend"/></p>
+	
+	<p><label data-tip="What's the minimum number of people you can host per experience?" for="createxpminattend">Minimum # of Attendees: </label>
+    <input min="1" value="1" style="width:60px" type="number" name="createxpminattend"/></p>
+	
+	<p><label data-tip="How much will your experience cost per person?" for="createxpprice">Price Per Attendee (USD): </label>
+    <input min="5" max="999" onkeyup="if (this.value > this.max) {this.value = this.max}" style="width:60px" type="number" value="5"name="createxpprice"/></p>
+	
+	<p><label data-tip="How long will your experience last? Enter one hour even if the duration is shorter." for="createxpduration">Duration (In Hours): </label>
+    <input min=".5" step="0.5" onkeyup="if (this.value > this.max) {this.value = this.max}" max="24" style="width:60px" type="number" value="0.5"name="createxpduration"/></p>
+	
+	<p><label data-tip="This is a big one. A mixed group is a group in which different guests come together at the same time for the same experience. Prohibiting mixed groups is useful if you need to transport yourself to a particular guest's location, or otherwise cannot serve to disparate groups of guests at once." for="createxpexclusive"><b>Do you want to prohibit mixed groups?</b> </label>
+    <input style="width:50px;margin-top:10px;" type="checkbox" name="createxpexclusive"/></p>
+	<br />
+	<div>
+		<label data-tip="Upload a nice square image to serve as the focal point of your experience. This image should summarize your experience - it's rad mojo!" for="profileimageupload">Profile Image (250 Pixels x 250 Pixels):</label><br />
+		<button style="margin:15px 0 15px 0;width:250px;height:30px;font-size:20px;" class="btn" name="profileimageupload">Upload Profile Image</button>
+	</div>
+	<div>
+		<img style="margin-bottom:20px"  name="profileimagepreview" />
+	</div>
+	<div>
+		<label data-tip="This image will be the background of your experience listing. It's rather large, so make sure you upload an image larger than 1 Megabyte. Feel free to ask us a question if you need help!'" for="coverimageupload">Cover Image (1200 Pixels x 800 Pixels):</label><br />
+		<button style="margin:15px 0 15px 0;width:250px;height:30px;font-size:20px;" class="btn" name="coverimageupload">Upload Cover Image</button>
+	</div>
+	<div>
+		<img style="margin-bottom:20px" name="coverimagepreview" />
+	</div>
+	<h3 style="font-weight:500;color:red;" class="error"></h3>
+	<button data-show="termscol" data-hide="basicscol" class="btn goto">Go Back</button>
+	<button data-show="mediacol" data-hide="basicscol" class="btn goto">Next</button><img src="https://s3-us-west-2.amazonaws.com/aggregus/assets/8-1.gif" name="photoloadgif" style="display:none" />
+	<p>
+</div>
+
+<div class="maincol mediacol">
+	<h1>Let's add some pictures.</h1>
+    <h3>Aggregus integrates with Imgur to make adding photos to your experience quick and simple. Take a few snapshots of yourself, your experiences's location, and other awesome stuff, then upload it to Imgur <a href="http://www.imgur.com" target="_blank">here</a>. If you haven't created an album on Imgur before, read our tutorial <a href="http://blog.aggregus.com/post/55311756661/upload-your-beautiful-pictures-to-aggregus" target="_blank">on our Tumblr</a>. Otherwise, simply drop a link to your Imgur album in the text box below and we'll take care of the rest!</h3>
+     <label for="createxpphotos">Enter Imgur Album URL: </label><br />
+    <input style="width:200px" type="text" name="createxpphotos" id="createxpphotos" /><button style="padding:10px 20px 10px 20px; font-size:15px;" class="btn previewAlbumStart">Preview</button><br />
+		<p>
+	<div class="previewAlbum"></div>
+	<p>
+	<button style="width:200px;height:45px;font-size:22px;margin-right:10px;" data-show="basicscol" data-hide="mediacol" class="btn goto">Go Back</button>
+	<button style="width:200px;height:45px;font-size:22px;margin-right:10px;" data-show="availabilitycol" data-hide="mediacol" class="btn goto">Next</button>
+	<p>
+</div>
+
+<div class="maincol availabilitycol">
+	<h1>What dates and times are your available?</h1>
+	<h3>List what times of the day you are available to host this experience, and then choose the days you are most available to host. Listing more days as available will increase the number of possible attendees, but users can still inquire regarding days you have not listed as "Most Available". Users will not be able to inquire about dates you have listed as "Not Available".</h3>
+	<select class="timeselect">
+	</select>
+	<button class="btn addtime">Add Time</button>
+	<div class="timesavailable" style="maxheight:150px">
+	</div>
+	<div style="height:1px;width:495px;background-color:black;margin:15px 0px 15px 0px"></div>
+	<h1>What dates are you available?</h1>
+	<h3>By default, guests may book any date and await your confirmation. However, we allow you to select particular days as especially available, or as not available at all. Simply select a date below to mark it as "Available", "Maybe", or "Unavailable". Days marked as "Maybe" are uncolored, whereas "Available" days are green and "Unavailable" days are red.</h3>
+    <input style="width:480px" type="hidden" name="createxpdateholder"/>
+	<p>
+	<label data-tip="A powerful feature! This option allows you to allow people to book only those dates you set as 'Available'. This is handy if your experience is only running once or twice, then ending." for"restrictDatesSelect">Restrict Bookings to Available Dates:</labeL><input style="margin:7.5px 0 0 -20px" type="checkbox" name="restrictDatesSelect" />
+	<p>
+	<div id='calendar'></div>
+	<p>
+	<button data-show="mediacol" data-hide="availabilitycol" class="btn goto">Go Back</button>
+	<button data-show="finishcol" data-hide="availabilitycol" class="btn goto">Next</button>
+	<p>
+</div>
+
+<div class="maincol finishcol">
+	<h1>And you're finished!</h1>
+	<h3>Thanks for creating an experience on Aggregus! Make sure to keep your availability up to date, and if a guest wants to book your experience, you will receive a notification on your dashboard. Till then, keep being awesome!</h3>
+	<button class="btn createxpfinish">Post my experience!</button>
+	<button data-show="availabilitycol" data-hide="finishcol" class="btn goto">Go Back</button>
+</div>
+
+</div>
