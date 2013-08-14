@@ -76,6 +76,10 @@ var Review = require('./object_models/review')(mongoose, email);
 var Heart = require('./object_models/heart')(mongoose, email);
 var Message = require('./object_models/message')(mongoose, email, User);
 
+// admin route
+
+require('./routes/admin/index')(app);
+
 // Bootstrap Call
 
 app.get('/', function(req, res) {
