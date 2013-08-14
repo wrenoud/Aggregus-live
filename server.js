@@ -2,18 +2,18 @@
 var secrets = require('./secrets.js')('dev');
 
 // Load central Deps
-var express = require('express');
-var crypto = require('crypto');
-var jade = require('jade');
-var underscore = require('underscore');
-var mongoose = require('mongoose');
-var mandrill = require('node-mandrill')(secrets.mandrill_api_key);
-var MemoryStore = require('connect').session.MemoryStore;
-var fs = require('fs');
-var querystring = require('querystring');
+express = require('express');
+crypto = require('crypto');
+jade = require('jade');
+underscore = require('underscore');
+mongoose = require('mongoose');
+mandrill = require('node-mandrill')(secrets.mandrill_api_key);
+MemoryStore = require('connect').session.MemoryStore;
+fs = require('fs');
+querystring = require('querystring');
 
 // Configure Stripe
-var Stripe = require('stripe')(secrets.stripe_api_key);
+Stripe = require('stripe')(secrets.stripe_api_key);
 
 // Hello there, gorgeous.
 
@@ -66,13 +66,13 @@ var email = require('./object_models/email')(mandrill);
 
 // Mongoose Object Models
 
-var User = require('./object_models/user')(mongoose, email);
-var Notifications = require('./object_models/notification')(mongoose, email);
-var Experience = require('./object_models/experience')(mongoose, email);
-var Booking = require('./object_models/booking')(mongoose, email);
-var Review = require('./object_models/review')(mongoose, email);
-var Heart = require('./object_models/heart')(mongoose, email);
-var Message = require('./object_models/message')(mongoose, email, User);
+User = require('./object_models/user')(mongoose, email);
+Notifications = require('./object_models/notification')(mongoose, email);
+Experience = require('./object_models/experience')(mongoose, email);
+Booking = require('./object_models/booking')(mongoose, email);
+Review = require('./object_models/review')(mongoose, email);
+Heart = require('./object_models/heart')(mongoose, email);
+Message = require('./object_models/message')(mongoose, email, User);
 
 // admin route
 
